@@ -1,0 +1,26 @@
+// layout
+q-footer {
+  z-index: 3000;
+}
+
+// page
+.page {
+  z-index: 2000;
+
+  &-body {
+    &-spacer {
+      &-header {
+        height: 100px;
+      }
+      &-footer {
+        height: 73px;
+      }
+    }
+  }
+}
+
+// transitions
+.slideInRight,
+.slideOutRight {
+  animation-duration: 0.4s;
+}
