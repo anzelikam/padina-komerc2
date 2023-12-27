@@ -32,14 +32,23 @@
             v-model="proizvodjac"
             narrow-indicator
             indicator-color="transparent"
-            ><div class="row items-center" style="max-width: 500px">
+            ><div class="row items-center" style="max-width: 550px">
               <div
                 v-for="saradnik in filteredSaradnici"
                 :key="saradnik.proizvodjac"
+                class="q-ma-sm"
                 :class="filteredSaradnici.length < 6 ? 'col' : 'col-2'"
               >
-                <q-tab :name="saradnik.proizvodjac"
+                <q-tab
+                  :name="saradnik.proizvodjac"
+                  class="saradnikButton justify-center"
+                  :class="
+                    saradnik.proizvodjac === proizvodjac
+                      ? 'bg-' + saradnik.boja
+                      : ''
+                  "
                   ><q-btn
+                    unelevated
                     round
                     :text-color="
                       saradnik.proizvodjac === proizvodjac
@@ -98,6 +107,7 @@
                 <a
                   v-if="proizvod.proizvodjac === saradnik.proizvodjac"
                   :href="saradnik.link"
+                  target="_blank"
                 >
                   Posetite stranicu proizvodjača
                 </a>
@@ -145,6 +155,7 @@
                 </p>
               </div>
             </div>
+
             <q-dialog
               persistent
               :maximized="maximizedToggle"
@@ -164,23 +175,37 @@
       </div>
 
       <q-dialog
+        persistent
+        style="background: rgba(9, 29, 52, 0.8)"
         v-model="showDetaljeAmbijenta"
-        class="bg-white"
-        transition-duration="500"
+        transition-duration="400"
         transition-show="slide-up"
         transition-hide="slide-down"
       >
-        <q-card-section class="row items-center q-pb-none">
-          <div class="text-h6">Close icon</div>
-          <q-space />
+        <!-- <q-card-section class="row text-center q-pb-none">
+          <q-btn icon="close" flat round dense v-close-popup color="white" />
+        </q-card-section> -->
+
+        <!-- <div class="text-h6 text-center">
           <q-btn icon="close" flat round dense v-close-popup />
-        </q-card-section>
-        <div style="width: 1000px; max-width: 100%">
+        </div> -->
+
+        <div style="width: 1000px; max-width: 100%" class="text-center">
+          <q-btn
+            color="white"
+            icon="close"
+            flat
+            round
+            dense
+            v-close-popup
+            class="q-mb-lg"
+          />
           <q-carousel
             animated
+            swipeable
             transition-next="slide-left"
             transition-prev="slide-right"
-            transition-duration="500"
+            transition-duration="300"
             v-model="slide"
             :arrows="multipleImagesInCarousel"
             :navigation="multipleImagesInCarousel"
@@ -200,7 +225,7 @@
       </q-dialog>
       <q-dialog
         style="background: rgba(9, 29, 52, 0.8)"
-        transition-duration="500"
+        transition-duration="400"
         v-model="showSingleLargeImage"
         transition-show="slide-up"
         transition-hide="slide-down"
@@ -368,7 +393,17 @@ function addToFavorite(
   height: 550px;
   border-bottom: 1px solid grey;
 }
+.podgrupaAmbijenta {
+  border: 1px solid inherit;
+  border-radius: 5px;
+}
 .podgrupaAmbijenta:hover {
   opacity: 0.6;
+}
+.saradnikButton {
+  width: 58px;
+  height: 58px;
+  border: 1px solid inherit;
+  border-radius: 50%;
 }
 </style>

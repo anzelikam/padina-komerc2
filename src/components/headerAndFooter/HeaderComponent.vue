@@ -1,9 +1,6 @@
 <template>
-  <q-header style="background: white">
+  <q-header class="bg-grey-2">
     <q-toolbar class="text-center">
-      <!-- <router-link to="/" >
-          <img src="logo/logo-padinakomerc.png" class="q-mb-sm" />
-        </router-link> -->
       <q-toolbar-title>
         <router-link to="/">
           <img src="logo/logo-padinakomerc.png" class="q-mb-sm" />

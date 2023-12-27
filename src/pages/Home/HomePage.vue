@@ -1,12 +1,12 @@
 <template>
   <page>
-    <q-header class="bg-white" style="height: 70px">
+    <q-header class="bg-grey-2" style="height: 70px">
       <q-toolbar
         class="flex flex-center"
         style="max-width: 1600px; margin: 0 auto"
       >
         <q-toolbar-title>
-          <img src="logo/logo-padinakomerc.png" style="width: 130px"
+          <img src="logo/logo-padinakomerc.png" style="width: 70px"
         /></q-toolbar-title>
 
         <div class="flex flex-center">
@@ -17,34 +17,37 @@
             class="text-grey-8 q-mt-sm"
           >
             <!-- <q-btn flat round dense icon="menu" class="q-mr-sm" /> -->
-            <q-btn-dropdown flat round dense icon="menu" class="q-mr-sm">
-              <q-list>
-                <q-item clickable v-close-popup @click="onItemClick">
-                  <q-item-section>
-                    <q-item-label>Photos</q-item-label>
-                  </q-item-section>
-                </q-item>
 
-                <q-item clickable v-close-popup @click="onItemClick">
-                  <q-item-section>
-                    <q-item-label>Videos</q-item-label>
-                  </q-item-section>
-                </q-item>
-
-                <q-item clickable v-close-popup @click="onItemClick">
-                  <q-item-section>
-                    <q-item-label>Articles</q-item-label>
-                  </q-item-section>
-                </q-item>
-              </q-list>
-            </q-btn-dropdown>
             <q-route-tab
+              class="list-menu"
               v-for="navItem in navigacija.navItems"
               :key="navItem.root"
               :to="navItem.to"
               :label="navItem.label"
             />
+
+            <q-btn flat round dense icon="menu" class="q-mr-sm burger-menu" />
+            <q-menu>
+              <q-list style="min-width: 100px">
+                <q-route-tab
+                  v-for="navItem in navigacija.navItems"
+                  :key="navItem.root"
+                  :to="navItem.to"
+                  :label="navItem.label"
+                />
+              </q-list>
+            </q-menu>
           </q-tabs>
+          <q-btn
+            flat
+            class="q-ml-sm"
+            v-if="storeOmiljeno.omiljeniProizvodi.length"
+            round
+            text-color="dark"
+            color="white"
+            icon="las la-heart"
+            to="/namestaj/omiljeno"
+          />
         </div>
       </q-toolbar>
     </q-header>
@@ -52,15 +55,12 @@
     <pageBody class="wallpaper">
       <div
         style="
-          background-color: rgba(255, 255, 255, 0.5);
-          max-width: 1600px;
+          background-color: rgba(255, 255, 255, 0.6);
+          max-width: 1200px;
           margin: 0 auto;
         "
       >
-        <div
-          class="text-center header q-pa-sm"
-          style="font-family: Arial, sans-serif"
-        >
+        <div class="text-center header q-pa-sm">
           <div class="text-h2 text-bold text-accent">Padina</div>
           <div class="text-h2 text-bold text-dark">Komerc</div>
           <div class="text-h5 text-dark">
@@ -141,20 +141,22 @@
             class="homePageContainer bg-dark"
             style="border-right: 1px solid grey"
           >
-            <h4 class="text-center text-positive text-bold">O nama</h4>
+            <router-link to="/o-nama" style="text-decoration: none">
+              <h4 class="text-center text-positive text-bold">O nama</h4>
 
-            <div class="text-center">
-              <!-- <i class="fa text-h1 text-secondary fa-home"></i> -->
-              <p class="text-positive text-center q-ma-xl text-subtitle1">
-                PADINA KOMERC je salon nameštaja, a ujedno i porodična firma.
-                Nalazimo se Padini na udaljenosti oko 35km od Pančeva. Još od
-                1990. kada je firma osnovana, svakim danom vam uspešno pomažemo
-                u opremanju Vašeg životnog i radnog prostora.
-              </p>
-            </div>
+              <div class="text-center">
+                <!-- <i class="fa text-h1 text-secondary fa-home"></i> -->
+                <p class="text-positive text-center q-ma-xl text-subtitle1">
+                  PADINA KOMERC je salon nameštaja, a ujedno i porodična firma.
+                  Nalazimo se Padini na udaljenosti oko 35km od Pančeva. Još od
+                  1990. kada je firma osnovana, svakim danom vam uspešno
+                  pomažemo u opremanju Vašeg životnog i radnog prostora.
+                </p>
+              </div>
+            </router-link>
           </div>
 
-          <div class="homePageContainer bg-dark">
+          <!-- <div class="homePageContainer bg-dark">
             <h4 class="text-center text-positive text-bold">Kontakt</h4>
             <div style="width: 80%; margin: 0 auto">
               <q-field class="bg-white">
@@ -188,7 +190,7 @@
                 </template>
               </q-field>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
       <Footer
@@ -203,9 +205,11 @@ import { ref } from "vue";
 import { useStoreSaradnici } from "../../stores/storeSaradnici";
 import Footer from "../../components/cFooter.vue";
 import { useStoreNavigacija } from "../../stores/storeNavigacija";
+import { useStoreOmiljeno } from "../../stores/storeOmiljeno";
 
 const navigacija = useStoreNavigacija();
 const storeSaradnici = useStoreSaradnici();
+const storeOmiljeno = useStoreOmiljeno();
 </script>
 
 <style>
@@ -250,6 +254,19 @@ const storeSaradnici = useStoreSaradnici();
   /* For mobile phones: */
   [class*="homePageContainer"] {
     width: 100%;
+  }
+}
+
+.burger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .burger-menu {
+    display: block;
+  }
+  .list-menu {
+    display: none;
   }
 }
 </style>

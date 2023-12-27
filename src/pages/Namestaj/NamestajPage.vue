@@ -36,7 +36,7 @@
                   class="naziv_ambijenta text-white"
                 >
                   <img
-                    class="q-ma-md"
+                    class="q-ma-md naziv_ambijenta_slika"
                     style="height: 170px; max-width: 300px"
                     src="/images/ambijenti/kuhinje_i_trpezarije.jpg"
                   />
@@ -48,7 +48,7 @@
                   class="naziv_ambijenta text-white"
                 >
                   <img
-                    class="q-ma-md"
+                    class="q-ma-md naziv_ambijenta_slika"
                     style="height: 170px; max-width: 300px"
                     src="/images/ambijenti/dnevne_sobe.jpg"
                   />
@@ -60,7 +60,7 @@
                   class="naziv_ambijenta text-white"
                 >
                   <img
-                    class="q-ma-md"
+                    class="q-ma-md naziv_ambijenta_slika"
                     style="height: 170px; max-width: 300px"
                     src="/images/ambijenti/spavace_sobe.jpg"
                   />
@@ -72,7 +72,7 @@
                   class="naziv_ambijenta text-white"
                 >
                   <img
-                    class="q-ma-md"
+                    class="q-ma-md naziv_ambijenta_slika"
                     style="height: 170px; max-width: 300px"
                     src="/images/ambijenti/decije_sobe.jpg"
                   />
@@ -83,7 +83,7 @@
                   class="naziv_ambijenta text-white"
                 >
                   <img
-                    class="q-ma-md"
+                    class="q-ma-md naziv_ambijenta_slika"
                     style="height: 170px; max-width: 300px"
                     src="/images/ambijenti/predsoblja.jpg"
                   />
@@ -94,7 +94,7 @@
                   class="naziv_ambijenta text-white"
                 >
                   <img
-                    class="q-ma-md"
+                    class="q-ma-md naziv_ambijenta_slika"
                     style="height: 170px; max-width: 300px"
                     src="/images/ambijenti/kancelarije.jpg"
                   />
@@ -106,7 +106,7 @@
                   class="naziv_ambijenta text-white"
                 >
                   <img
-                    class="q-ma-md"
+                    class="q-ma-md naziv_ambijenta_slika"
                     style="height: 170px; max-width: 300px"
                     src="/images/ambijenti/ostalo.jpg"
                   />
@@ -129,12 +129,16 @@
 
 <style>
 .naziv_ambijenta {
-  border: 1px solid inherit;
+  border: 1px solid #091d34;
+  border-radius: 5px;
   text-transform: uppercase;
   text-decoration: none;
   margin: 2px;
 }
 .naziv_ambijenta:hover {
   border: 1px solid white;
+}
+.naziv_ambijenta_slika {
+  border-radius: 5px;
 }
 </style>

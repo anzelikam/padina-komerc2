@@ -1,9 +1,8 @@
 <template>
-  <div class="justify-center" style="max-width: 800px; margin: 0 auto">
+  <div class="justify-center" style="max-width: 800px; margin: 15px auto">
     <div v-for="ambijent in ambijenti" :key="ambijent.slika">
       <img
-        class="ambijent"
-        style="max-width: 90%; cursor: pointer; transition: ease 1s"
+        class="ambijent rounded q-mb-md"
         :src="ambijent.slika"
         @click="
           selektovaniProizvodi(
@@ -20,22 +19,21 @@
       <div
         v-for="celina in celineAmbijenta"
         :key="celina.slika"
-        class="col-sm-3 col-xs-3 q-mt-lg"
+        class="col-sm-3 col-xs-3 celinaAmbijenta"
+        @click="
+          selektovaniProizvodi(
+            celina.selektovano,
+            celina.imagePath,
+            celina.naziv,
+            celina.imageExt
+          )
+        "
       >
-        <img
-          class="celinaAmbijenta"
-          :src="celina.slika"
-          @click="
-            selektovaniProizvodi(
-              celina.selektovano,
-              celina.imagePath,
-              celina.naziv,
-              celina.imageExt
-            )
-          "
-        />
-        <div class="q-ma-sm" style="height: 50px">
-          <p class="text-white">{{ celina.naziv.toLocaleUpperCase() }}</p>
+        <img class="celinaAmbijentaIcon" :src="celina.slika" />
+        <div style="height: 50px">
+          <p class="text-white celinaAmbijentaNaziv">
+            {{ celina.naziv.toLocaleUpperCase() }}
+          </p>
         </div>
       </div>
     </div>
@@ -71,6 +69,7 @@ import selektovanaGrupaNamestaja from "../../components/saradnici/selektovanaGru
 
 const storePodgrupaAmbijenta = useStorePodgrupaAmbijenta();
 const podgrupaAmbijenta = ref(storePodgrupaAmbijenta.podgrupaAmbijenta);
+
 const podgrupaAmbijentaImagePath = ref(
   storePodgrupaAmbijenta.podgrupaAmbijentaImagePath
 );
@@ -108,25 +107,42 @@ function selektovaniProizvodi(selected, image, name, ext) {
 
 <style>
 .ambijent {
-  border: 1px solid inherit;
-  padding: 5px;
+  padding: 25px;
+  border-radius: 5px;
+  border: 1px solid #091d34;
+  max-width: 90%;
+  cursor: pointer;
 }
 .ambijent:hover {
-  border: 1px solid white;
+  border: 2px solid white;
 }
 /* .ambijent:hover {
   box-shadow: 15px 15px 50px 10px #091d34;
 } */
 
-.celinaAmbijenta {
-  cursor: pointer;
-  transition: ease 1s;
+.celinaAmbijentaIcon {
   max-width: 80px;
-  border: 1px solid inherit;
   padding: 10px;
+}
+@media screen and (max-width: 800px) {
+  .celinaAmbijentaIcon {
+    width: 60px;
+  }
+  .celinaAmbijentaNaziv {
+    font-size: 12px;
+  }
+}
+
+.celinaAmbijenta {
+  max-width: 150px;
+  transition: ease;
+  cursor: pointer;
+  border: 1px solid #091d34;
+  border-radius: 5px;
 }
 
 .celinaAmbijenta:hover {
   border: 1px solid white;
+  border-radius: 5px;
 }
 </style>

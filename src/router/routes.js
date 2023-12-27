@@ -65,6 +65,10 @@ const routes = [
             path: "/namestaj/ostalo",
             component: () => import("pages/Namestaj/OstaloPage.vue"),
           },
+          {
+            path: "/namestaj/omiljeno",
+            component: () => import("pages/omiljenoPage.vue"),
+          },
 
           // {
           //   path: "/home/child/grandchild",
@@ -87,10 +91,10 @@ const routes = [
         component: () => import("pages/Onama/oNamaPage.vue"),
       },
 
-      {
-        path: "/omiljeno",
-        component: () => import("pages/omiljenoPage.vue"),
-      },
+      // {
+      //   path: "/omiljeno",
+      //   component: () => import("pages/omiljenoPage.vue"),
+      // },
     ],
   },
   // {
