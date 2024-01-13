@@ -47,7 +47,7 @@ const ambijenti = ref([
   {
     imagePath: "/images/kuhinje/",
     slika: "/images/ambijenti/kuhinje_i_trpezarije.jpg",
-    naziv: "kuhinje",
+    naziv: "kuhinje ambijenti",
     selektovano: storeKuhinje.kuhinje,
     imageExt: ".png",
   },
@@ -78,11 +78,11 @@ const celineAmbijenta = ref([
     imageExt: ".png",
   },
   {
-    imagePath: "/images/visenamenski_namestaj/kuhinjske_komode/",
-    slika: "/icons/kuhinjska-komoda.png",
+    imagePath: "/images/visenamenski_namestaj/komode/",
+    slika: "/icons/komoda.png",
     naziv: "komode",
-    selektovano: storeVisenamenskiNamestaj.kuhinjskeKomode,
-    imageExt: ".png",
+    selektovano: storeVisenamenskiNamestaj.komode,
+    imageExt: ".jpg",
   },
 ]);
 </script>

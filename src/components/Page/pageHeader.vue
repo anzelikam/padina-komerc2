@@ -19,8 +19,7 @@
         class="q-toolbar__title ellipsis absolute-center q-pl-none text-dark text-body1"
       >
         <slot name="title" />
-
-        <span v-if="$route.path !== '/namestaj/omiljeno'">
+        <!-- <span v-if="$route.path !== '/namestaj/omiljeno'">
           <q-btn
             class="q-ml-sm"
             v-if="storeOmiljeno.omiljeniProizvodi.length"
@@ -30,7 +29,7 @@
             color="white"
             icon="las la-heart"
             to="/namestaj/omiljeno"
-        /></span>
+        /></span> -->
       </div>
     </div>
   </header>

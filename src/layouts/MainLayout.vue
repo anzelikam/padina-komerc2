@@ -201,7 +201,6 @@
           v-for="navItem in navigacija.navItems"
           :key="navItem.root"
           :to="navItem.to"
-          :label="navItem.label"
           :icon="navItem.icon"
         />
       </q-tabs>
@@ -345,3 +344,4 @@ storeOmiljeno.getOmiljeniProizvodiFromLocalS();
   opacity: 0;
 }
 </style>
+<!-- :label="navItem.label" -->

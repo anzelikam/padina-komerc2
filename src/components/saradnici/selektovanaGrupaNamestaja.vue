@@ -138,6 +138,7 @@
                   <span style="text-transform: capitalize">{{
                     proizvod.naziv
                   }}</span>
+
                   <q-btn
                     flat
                     round
@@ -153,6 +154,7 @@
                     "
                   />
                 </p>
+                <div>{{ proizvod.boja }}</div>
               </div>
             </div>
 

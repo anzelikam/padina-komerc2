@@ -13,17 +13,18 @@ export const useStoreSaradnici = defineStore("saradnici", {
         boja: "yellow-7",
       },
       {
-        proizvodjac: "matis",
-        logo: "/logo/logo-matis.png",
-        link: "https://matis.rs/",
-        boja: "purple-7",
-      },
-      {
         proizvodjac: "extrasan",
         logo: "/logo/logo-extrasan.png",
         link: "https://namestajextra.com/",
         boja: "pink-7",
       },
+      {
+        proizvodjac: "matis",
+        logo: "/logo/logo-matis.png",
+        link: "https://matis.rs/",
+        boja: "purple-7",
+      },
+
       {
         proizvodjac: "numanovic",
         logo: "/logo/logo-numanovic.png",

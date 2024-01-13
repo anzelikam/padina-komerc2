@@ -107,14 +107,14 @@ function selektovaniProizvodi(selected, image, name, ext) {
 
 <style>
 .ambijent {
-  padding: 25px;
+  padding: 10px;
   border-radius: 5px;
   border: 1px solid #091d34;
   max-width: 90%;
   cursor: pointer;
 }
 .ambijent:hover {
-  border: 2px solid white;
+  border: 1px solid white;
 }
 /* .ambijent:hover {
   box-shadow: 15px 15px 50px 10px #091d34;

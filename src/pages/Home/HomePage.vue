@@ -28,7 +28,7 @@
 
             <q-btn flat round dense icon="menu" class="q-mr-sm burger-menu" />
             <q-menu>
-              <q-list style="min-width: 100px">
+              <q-list style="min-width: 80px">
                 <q-route-tab
                   v-for="navItem in navigacija.navItems"
                   :key="navItem.root"

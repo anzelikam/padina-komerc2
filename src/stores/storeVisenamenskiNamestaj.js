@@ -465,12 +465,7 @@ export const useStoreVisenamenskiNamestaj = defineStore("visenamenski", {
         naziv: "porto",
         favorite: false,
       },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "02",
-      //   naziv: "linkStyle",
-      //   favorite: false,
-      // },
+
       {
         proizvodjac: "matis",
         img: "01",
@@ -507,24 +502,14 @@ export const useStoreVisenamenskiNamestaj = defineStore("visenamenski", {
         naziv: "roma",
         favorite: false,
       },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "08",
-      //   naziv: "roma ugaona",
-      //   favorite: false,
-      // },
+
       {
         proizvodjac: "matis",
         img: "09",
         naziv: "roma 150",
         favorite: false,
       },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "10",
-      //   naziv: "mediolan",
-      //   favorite: false,
-      // },
+
       {
         proizvodjac: "matis",
         img: "11",
@@ -544,31 +529,6 @@ export const useStoreVisenamenskiNamestaj = defineStore("visenamenski", {
         favorite: false,
       },
 
-      // {
-      //   proizvodjac: "matis",
-      //   img: "14",
-      //   naziv: "grand",
-      //   favorite: false,
-      // },
-
-      // {
-      //   proizvodjac: "matis",
-      //   img: "15",
-      //   naziv: "kairo",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "16",
-      //   naziv: "leon",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "17",
-      //   naziv: "orion",
-      //   favorite: false,
-      // },
       {
         proizvodjac: "attrium",
         img: "01",
@@ -635,12 +595,7 @@ export const useStoreVisenamenskiNamestaj = defineStore("visenamenski", {
         naziv: "nica",
         favorite: false,
       },
-      // {
-      //   proizvodjac: "attrium",
-      //   img: "12",
-      //   naziv: "violeta",
-      //   favorite: false,
-      // },
+
       {
         proizvodjac: "attrium",
         img: "13",
@@ -653,18 +608,48 @@ export const useStoreVisenamenskiNamestaj = defineStore("visenamenski", {
         naziv: "loka",
         favorite: false,
       },
-      // {
-      //   proizvodjac: "attrium",
-      //   img: "15",
-      //   naziv: "tatijana",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "attrium",
-      //   img: "16",
-      //   naziv: "irisa",
-      //   favorite: false,
-      // },
+      {
+        proizvodjac: "djuka",
+        img: "01",
+        naziv: "jednokrilna biblioteka",
+        favorite: false,
+      },
+      {
+        proizvodjac: "djuka",
+        img: "02",
+        naziv: "dvokrilna biblioteka",
+        favorite: false,
+      },
+      {
+        proizvodjac: "djuka",
+        img: "03",
+        naziv: "kleopatra",
+        favorite: false,
+      },
+      {
+        proizvodjac: "djuka",
+        img: "04",
+        naziv: "dvokrilna nadogradnja",
+        favorite: false,
+      },
+      {
+        proizvodjac: "djuka",
+        img: "05",
+        naziv: "trokrilna nadogradnja",
+        favorite: false,
+      },
+      {
+        proizvodjac: "djuka",
+        img: "06",
+        naziv: "jednokrilna serija x",
+        favorite: false,
+      },
+      {
+        proizvodjac: "djuka",
+        img: "07",
+        naziv: "dvokrilna serija x",
+        favorite: false,
+      },
     ],
   }),
   getters: {},

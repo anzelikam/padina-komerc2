@@ -42,7 +42,7 @@ const ambijenti = ref([
   {
     imagePath: "/images/dnevne_sobe/",
     slika: "/images/ambijenti/dnevne_sobe.jpg",
-    naziv: "dnevne sobe",
+    naziv: "dnevne sobe ambijenti",
     selektovano: storeDnevneSobe.dnevneSobe,
     imageExt: ".jpg",
   },
@@ -96,18 +96,25 @@ const celineAmbijenta = ref([
 
   {
     imagePath: "/images/visenamenski_namestaj/komode/",
-    slika: "/icons/dnevna-komoda.png",
+    slika: "/icons/komoda.png",
     naziv: "komode",
     selektovano: storeVisenamenskiNamestaj.komode,
-    imageExt: ".png",
+    imageExt: ".jpg",
   },
   {
-    imagePath: "/images/visenamenski_namestaj/vitrine/",
-    slika: "/icons/dnevna-vitrina.png",
-    naziv: "vitrine",
-    selektovano: storeVisenamenskiNamestaj.vitrine,
-    imageExt: ".png",
+    imagePath: "/images/tv_komode/",
+    slika: "/icons/tv-stand.png",
+    naziv: "tv-komode",
+    selektovano: storeDnevneSobe.tvKomode,
+    imageExt: ".jpg",
   },
+  // {
+  //   imagePath: "/images/visenamenski_namestaj/vitrine/",
+  //   slika: "/icons/dnevna-vitrina.png",
+  //   naziv: "vitrine",
+  //   selektovano: storeVisenamenskiNamestaj.vitrine,
+  //   imageExt: ".png",
+  // },
 ]);
 </script>
 

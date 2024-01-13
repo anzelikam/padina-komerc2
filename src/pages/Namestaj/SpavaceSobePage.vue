@@ -1,17 +1,3 @@
-<!-- <template>
-  <q-page class="flex flex-center bg-positive">
-    <pageHeader>
-      <template #buttons-left>
-        <pageHeaderBtnBack label="Ambijenti"></pageHeaderBtnBack>
-      </template>
-      <template #title>Spavace sobe</template>
-    </pageHeader>
-    <pageBody>
-      <div>Spavace sobe</div>
-    </pageBody>
-  </q-page>
-</template> -->
-
 <template>
   <q-page class="flex flex-center bg-positive">
     <pageHeader>
@@ -56,7 +42,7 @@ const ambijenti = ref([
   {
     imagePath: "/images/spavace_sobe/",
     slika: "/images/ambijenti/spavace_sobe.jpg",
-    naziv: "spavaće sobe",
+    naziv: "spavaće sobe ambijenti",
     selektovano: storeSpavaceSobe.spavaceSobe,
     imageExt: ".jpg",
   },
@@ -65,93 +51,31 @@ const ambijenti = ref([
 const celineAmbijenta = ref([
   {
     imagePath: "/images/francuski_lezajevi/",
-    slika: "/icons/ugaona.png",
+    slika: "/icons/francuski-lezaj.png",
     naziv: "francuski ležajevi",
     selektovano: storeSpavaceSobe.francuskiLezajevi,
     imageExt: ".jpg",
   },
   {
     imagePath: "/images/nocni_ormarici/",
-    slika: "/icons/ugaona.png",
+    slika: "/icons/nocni-ormaric.png",
     naziv: "noćni ormarići",
     selektovano: storeSpavaceSobe.nocniOrmarici,
     imageExt: ".jpg",
   },
   {
     imagePath: "/images/visenamenski_namestaj/komode/",
-    slika: "/icons/dnevna-komoda.png",
+    slika: "/icons/komoda.png",
     naziv: "komode",
     selektovano: storeVisenamenskiNamestaj.komode,
     imageExt: ".png",
   },
-  // {
-  //   imagePath: "/images/tdf_garniture/",
-  //   slika: "/icons/trosed-dvosed-fotelja.png",
-  //   naziv: "tdf garniture",
-  //   selektovano: storeDnevneSobe.tdfGarniture,
-  //   imageExt: ".jpg",
-  // },
+  {
+    imagePath: "/images/ormari_plakari_garderoberi/",
+    slika: "/icons/plakari.png",
+    naziv: "ormari, plakari, garderoberi",
+    selektovano: storeSpavaceSobe.ormariPlakariGarderoberi,
+    imageExt: ".jpg",
+  },
 ]);
-
-// const celineAmbijenta = ref([
-//   {
-//     imagePath: "/images/ugaone_garniture/",
-//     slika: "/icons/ugaona.png",
-//     naziv: "ugaone garniture",
-//     selektovano: storeDnevneSobe.ugaoneGarniture,
-//     imageExt: ".jpg",
-//   },
-//   {
-//     imagePath: "/images/tdf_garniture/",
-//     slika: "/icons/trosed-dvosed-fotelja.png",
-//     naziv: "tdf garniture",
-//     selektovano: storeDnevneSobe.tdfGarniture,
-//     imageExt: ".jpg",
-//   },
-//   {
-//     imagePath: "/images/fotelje_i_taburei/",
-//     slika: "/icons/fotelja.png",
-//     naziv: "fotelje i taburei",
-//     selektovano: storeDnevneSobe.foteljeItaburei,
-//     imageExt: ".jpg",
-//   },
-
-//   {
-//     imagePath: "/images/kaucevi/",
-//     slika: "/icons/kauc.png",
-//     naziv: "kaučevi",
-//     selektovano: storeDnevneSobe.kaucevi,
-//     imageExt: ".jpg",
-//   },
-//   {
-//     imagePath: "/images/lezajevi/",
-//     slika: "/icons/lezaj.png",
-//     naziv: "ležajevi",
-//     selektovano: storeDnevneSobe.lezajevi,
-//     imageExt: ".jpg",
-//   },
-
-//   {
-//     imagePath: "/images/klub_stolovi/",
-//     slika: "/icons/klub-sto.png",
-//     naziv: "klub stolovi",
-//     selektovano: storeDnevneSobe.klubStolovi,
-//     imageExt: ".png",
-//   },
-
-//   {
-//     imagePath: "/images/visenamenski_namestaj/komode/",
-//     slika: "/icons/dnevna-komoda.png",
-//     naziv: "komode",
-//     selektovano: storeVisenamenskiNamestaj.komode,
-//     imageExt: ".png",
-//   },
-//   {
-//     imagePath: "/images/visenamenski_namestaj/vitrine/",
-//     slika: "/icons/dnevna-vitrina.png",
-//     naziv: "vitrine",
-//     selektovano: storeVisenamenskiNamestaj.vitrine,
-//     imageExt: ".png",
-//   },
-// ]);
 </script>
