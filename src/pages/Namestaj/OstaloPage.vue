@@ -2,6 +2,7 @@
   <q-page class="flex flex-center bg-positive">
     <pageHeader>
       <template #buttons-left>
+        <mainHeader></mainHeader>
         <pageHeaderBtnBack label="Ambijenti"></pageHeaderBtnBack>
       </template>
       <template #title>Ostalo</template>

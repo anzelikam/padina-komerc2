@@ -39,26 +39,6 @@ export const useStoreOmiljeno = defineStore("omiljeno", {
       console.log("this.omiljeniProizvodi", this.omiljeniProizvodi);
       localStorage.setItem("omiljeno", JSON.stringify(this.omiljeniProizvodi));
     },
-    // addOmiljeniProizvod(
-    //   proizvod,
-    //   podgrupaAmbijentaImagePath,
-    //   podgrupaAmbijentaNaziv,
-    //   imageExt
-    // ) {
-    //   const omiljeniProizvod = {
-    //     proizvodjac: proizvod.proizvodjac,
-    //     img: proizvod.img,
-    //     naziv: proizvod.naziv,
-    //     imagePath: podgrupaAmbijentaImagePath,
-    //     podgrupaAmbijentaNaziv: podgrupaAmbijentaNaziv,
-    //     imageExt: imageExt,
-    //     favorite: true,
-    //   };
-    //   this.omiljeniProizvodi.push(omiljeniProizvod);
-
-    //   console.log("this.omiljeniProizvodi", this.omiljeniProizvodi);
-    //   localStorage.setItem("omiljeno", JSON.stringify(this.omiljeniProizvodi));
-    // },
 
     deleteOmiljeniProizvod(index, proizvod) {
       console.log("proizvod to delete", proizvod);

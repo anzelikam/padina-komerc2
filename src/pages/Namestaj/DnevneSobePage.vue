@@ -2,6 +2,7 @@
   <q-page class="flex flex-center bg-positive">
     <pageHeader>
       <template #buttons-left>
+        <mainHeader></mainHeader>
         <pageHeaderBtnBack label="Ambijenti"></pageHeaderBtnBack>
       </template>
       <template #title>Dnevne sobe</template>
@@ -40,7 +41,7 @@ const storeVisenamenskiNamestaj = useStoreVisenamenskiNamestaj();
 
 const ambijenti = ref([
   {
-    imagePath: "/images/dnevne_sobe/",
+    imagePath: "/images/ambijenti/dnevne_sobe/",
     slika: "/images/ambijenti/dnevne_sobe.jpg",
     naziv: "dnevne sobe ambijenti",
     selektovano: storeDnevneSobe.dnevneSobe,
@@ -82,7 +83,7 @@ const celineAmbijenta = ref([
     imagePath: "/images/lezajevi/",
     slika: "/icons/lezaj.png",
     naziv: "ležajevi",
-    selektovano: storeDnevneSobe.lezajevi,
+    selektovano: storeVisenamenskiNamestaj.lezajevi,
     imageExt: ".jpg",
   },
 
@@ -108,13 +109,6 @@ const celineAmbijenta = ref([
     selektovano: storeDnevneSobe.tvKomode,
     imageExt: ".jpg",
   },
-  // {
-  //   imagePath: "/images/visenamenski_namestaj/vitrine/",
-  //   slika: "/icons/dnevna-vitrina.png",
-  //   naziv: "vitrine",
-  //   selektovano: storeVisenamenskiNamestaj.vitrine,
-  //   imageExt: ".png",
-  // },
 ]);
 </script>
 

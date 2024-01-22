@@ -1,5 +1,5 @@
 <template>
-  <div class="justify-center" style="max-width: 800px; margin: 15px auto">
+  <div class="justify-center" style="max-width: 800px; margin: 0 auto">
     <div v-for="ambijent in ambijenti" :key="ambijent.slika">
       <img
         class="ambijent rounded q-mb-md"
@@ -48,8 +48,6 @@
     animated
     transition-duration="500"
   >
-    <!-- enter-active-class="animated slideInRight"
-        leave-active-class="animated slideOutRight" -->
     <div class="bg-white">
       <selektovanaGrupaNamestaja
         :ambijenti="ambijenti"
@@ -116,9 +114,6 @@ function selektovaniProizvodi(selected, image, name, ext) {
 .ambijent:hover {
   border: 1px solid white;
 }
-/* .ambijent:hover {
-  box-shadow: 15px 15px 50px 10px #091d34;
-} */
 
 .celinaAmbijentaIcon {
   max-width: 80px;

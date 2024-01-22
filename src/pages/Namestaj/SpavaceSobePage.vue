@@ -2,10 +2,12 @@
   <q-page class="flex flex-center bg-positive">
     <pageHeader>
       <template #buttons-left>
+        <mainHeader></mainHeader>
         <pageHeaderBtnBack label="Ambijenti"></pageHeaderBtnBack>
       </template>
       <template #title>Spavaće sobe</template>
     </pageHeader>
+    <mainHeader></mainHeader>
     <pageBody class="bg-dark">
       <div class="text-center">
         <div class="text-center" style="margin-top: 70px">
@@ -40,7 +42,7 @@ const storeVisenamenskiNamestaj = useStoreVisenamenskiNamestaj();
 
 const ambijenti = ref([
   {
-    imagePath: "/images/spavace_sobe/",
+    imagePath: "/images/ambijenti/spavace_sobe/",
     slika: "/images/ambijenti/spavace_sobe.jpg",
     naziv: "spavaće sobe ambijenti",
     selektovano: storeSpavaceSobe.spavaceSobe,
@@ -71,7 +73,7 @@ const celineAmbijenta = ref([
     imageExt: ".png",
   },
   {
-    imagePath: "/images/ormari_plakari_garderoberi/",
+    imagePath: "/images/ormari_plakari_garderoberi/spavaca/",
     slika: "/icons/plakari.png",
     naziv: "ormari, plakari, garderoberi",
     selektovano: storeSpavaceSobe.ormariPlakariGarderoberi,

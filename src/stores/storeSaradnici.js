@@ -1,7 +1,4 @@
 import { defineStore } from "pinia";
-import { useStoreOmiljeno } from "../stores/storeOmiljeno";
-
-const omiljeniProizvodi = useStoreOmiljeno();
 
 export const useStoreSaradnici = defineStore("saradnici", {
   state: () => ({

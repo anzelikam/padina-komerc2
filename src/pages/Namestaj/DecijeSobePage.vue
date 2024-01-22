@@ -2,6 +2,7 @@
   <q-page class="flex flex-center bg-positive">
     <pageHeader>
       <template #buttons-left>
+        <mainHeader></mainHeader>
         <pageHeaderBtnBack label="Ambijenti"></pageHeaderBtnBack>
       </template>
       <template #title>Dečije sobe</template>
@@ -32,17 +33,15 @@
 <script setup>
 import { ref } from "vue";
 import { useStoreDecijeSobe } from "../../stores/storeDecijeSobe";
-import { useStoreDnevneSobe } from "../../stores/storeDnevneSobe";
-import { useStoreSpavaceSobe } from "../../stores/storeSpavaceSobe ";
+import { useStoreVisenamenskiNamestaj } from "../../stores/storeVisenamenskiNamestaj";
 import selektovaniAmbijent from "../../components/saradnici/selektovaniAmbijent.vue";
 
 const storeDecijeSobe = useStoreDecijeSobe();
-const storeDnevneSobe = useStoreDnevneSobe();
-const storeSpavaceSobe = useStoreSpavaceSobe();
+const storeVisenamenskiNamestaj = useStoreVisenamenskiNamestaj();
 
 const ambijenti = ref([
   {
-    imagePath: "/images/decije_sobe/",
+    imagePath: "/images/ambijenti/decije_sobe/",
     slika: "/images/ambijenti/decije_sobe.jpg",
     naziv: "dečije sobe ambijenti",
     selektovano: storeDecijeSobe.decijeSobe,
@@ -62,33 +61,18 @@ const celineAmbijenta = ref([
     imagePath: "/images/lezajevi/",
     slika: "/icons/lezaj.png",
     naziv: "ležajevi",
-    selektovano: storeDnevneSobe.lezajevi,
+    selektovano: storeVisenamenskiNamestaj.lezajevi,
     imageExt: ".jpg",
   },
   {
-    imagePath: "/images/deciji_garderoberi_komode_nocniOrmarici/",
+    imagePath: "/images/ormari_plakari_garderoberi/decija/",
     slika: "/icons/nocni-ormaric.png",
     naziv: "garderoberi, komode, noćni ormarići",
     selektovano: storeDecijeSobe.garderoberiKomodeNocniOrmarici,
     imageExt: ".jpg",
   },
-
-  // {
-  //   imagePath: "/images/ormari_plakari_garderoberi/",
-  //   slika: "/icons/plakari.png",
-  //   naziv: "ormari, plakari, garderoberi",
-  //   selektovano: storeSpavaceSobe.ormariPlakariGarderoberi,
-  //   imageExt: ".jpg",
-  // },
-  // {
-  //   imagePath: "/images/nocniOrmarici_komode/",
-  //   slika: "/icons/nocni-ormaric.png",
-  //   naziv: "noćni ormarići, komode",
-  //   selektovano: storeDecijeSobe.garderoberiKomodeNocniOrmarici,
-  //   imageExt: ".jpg",
-  // },
   {
-    imagePath: "/images/radni_stolovi/",
+    imagePath: "/images/radni_stolovi/deciji/",
     slika: "/icons/radni-sto.png",
     naziv: "radni stolovi",
     selektovano: storeDecijeSobe.radniStolovi,
@@ -98,7 +82,7 @@ const celineAmbijenta = ref([
     imagePath: "/images/radne_stolice/",
     slika: "/icons/radna-stolica.png",
     naziv: "radne stolice",
-    selektovano: storeDecijeSobe.radneStolice,
+    selektovano: storeVisenamenskiNamestaj.radneStolice,
     imageExt: ".jpg",
   },
 ]);

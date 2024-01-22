@@ -3,6 +3,7 @@
     <div>
       <pageHeader>
         <template #buttons-left>
+          <mainHeader></mainHeader>
           <q-btn
             to="home"
             icon="chevron_left"

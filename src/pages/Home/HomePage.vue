@@ -1,56 +1,6 @@
 <template>
   <page>
-    <q-header class="bg-grey-2" style="height: 70px">
-      <q-toolbar
-        class="flex flex-center"
-        style="max-width: 1600px; margin: 0 auto"
-      >
-        <q-toolbar-title>
-          <img src="logo/logo-padinakomerc.png" style="width: 70px"
-        /></q-toolbar-title>
-
-        <div class="flex flex-center">
-          <q-tabs
-            no-caps
-            active-color="accent"
-            indicator-color="transparent"
-            class="text-grey-8 q-mt-sm"
-          >
-            <!-- <q-btn flat round dense icon="menu" class="q-mr-sm" /> -->
-
-            <q-route-tab
-              class="list-menu"
-              v-for="navItem in navigacija.navItems"
-              :key="navItem.root"
-              :to="navItem.to"
-              :label="navItem.label"
-            />
-
-            <q-btn flat round dense icon="menu" class="q-mr-sm burger-menu" />
-            <q-menu>
-              <q-list style="min-width: 80px">
-                <q-route-tab
-                  v-for="navItem in navigacija.navItems"
-                  :key="navItem.root"
-                  :to="navItem.to"
-                  :label="navItem.label"
-                />
-              </q-list>
-            </q-menu>
-          </q-tabs>
-          <q-btn
-            flat
-            class="q-ml-sm"
-            v-if="storeOmiljeno.omiljeniProizvodi.length"
-            round
-            text-color="dark"
-            color="white"
-            icon="las la-heart"
-            to="/namestaj/omiljeno"
-          />
-        </div>
-      </q-toolbar>
-    </q-header>
+    <mainHeader></mainHeader>
 
     <pageBody class="wallpaper">
       <div
@@ -68,26 +18,6 @@
           </div>
         </div>
       </div>
-      <!-- <q-btn
-          to="/home"
-          label="Home"
-          icon="chevron_left"
-          color="primary"
-          flat
-          rounded
-          dense
-          no-caps
-        ></q-btn> -->
-
-      <!-- <q-btn
-          to="home/child"
-          label="Go To Child Page"
-          color="primary"
-          class="full-width q-mb-md"
-          rounded
-          unelevated
-          no-caps
-        ></q-btn> -->
 
       <div style="margin-top: 100px; margin-bottom: 250px">
         <div class="flex flex-center">
@@ -145,7 +75,6 @@
               <h4 class="text-center text-positive text-bold">O nama</h4>
 
               <div class="text-center">
-                <!-- <i class="fa text-h1 text-secondary fa-home"></i> -->
                 <p class="text-positive text-center q-ma-xl text-subtitle1">
                   PADINA KOMERC je salon nameštaja, a ujedno i porodična firma.
                   Nalazimo se Padini na udaljenosti oko 35km od Pančeva. Još od
@@ -155,42 +84,6 @@
               </div>
             </router-link>
           </div>
-
-          <!-- <div class="homePageContainer bg-dark">
-            <h4 class="text-center text-positive text-bold">Kontakt</h4>
-            <div style="width: 80%; margin: 0 auto">
-              <q-field class="bg-white">
-                <template v-slot:control>
-                  <div
-                    class="self-center text-center full-width outline"
-                    tabindex="0"
-                  >
-                    Lenjinova 18, 26215 PADINA
-                  </div>
-                </template>
-              </q-field>
-              <q-field class="bg-white">
-                <template v-slot:control>
-                  <div
-                    class="self-center text-center full-width outline"
-                    tabindex="0"
-                  >
-                    013 667-275
-                  </div>
-                </template>
-              </q-field>
-              <q-field class="bg-white">
-                <template v-slot:control>
-                  <div
-                    class="self-center text-center full-width outline"
-                    tabindex="0"
-                  >
-                    padinakomerc.namestaj@gmail.com
-                  </div>
-                </template>
-              </q-field>
-            </div>
-          </div> -->
         </div>
       </div>
       <Footer
@@ -207,9 +100,15 @@ import Footer from "../../components/cFooter.vue";
 import { useStoreNavigacija } from "../../stores/storeNavigacija";
 import { useStoreOmiljeno } from "../../stores/storeOmiljeno";
 
+import { useStorePodgrupaAmbijenta } from "../../stores/storePodgrupaAmbijenta";
+import selektovanaGrupaNamestaja from "../../components/saradnici/selektovanaGrupaNamestaja.vue";
+
 const navigacija = useStoreNavigacija();
 const storeSaradnici = useStoreSaradnici();
 const storeOmiljeno = useStoreOmiljeno();
+const maximizedToggle = ref(true);
+const storePodgrupaAmbijenta = useStorePodgrupaAmbijenta();
+const podgrupaAmbijenta = ref(storePodgrupaAmbijenta.podgrupaAmbijenta);
 </script>
 
 <style>
@@ -223,10 +122,7 @@ const storeOmiljeno = useStoreOmiljeno();
   background-color: #ffffff;
   opacity: 0.6;
 }
-.header {
-  margin-top: 100px;
-  margin-bottom: 70px;
-}
+
 .logo_saradnici {
   background-color: rgb(227, 227, 236);
   width: 300px;
@@ -261,7 +157,7 @@ const storeOmiljeno = useStoreOmiljeno();
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .burger-menu {
     display: block;
   }

@@ -2,7 +2,8 @@
   <q-page>
     <pageHeader>
       <template #buttons-left>
-        <!-- <pageHeaderBtnBack label="Home"></pageHeaderBtnBack> -->
+        <mainHeader></mainHeader>
+
         <q-btn
           to="/home"
           icon="chevron_left"

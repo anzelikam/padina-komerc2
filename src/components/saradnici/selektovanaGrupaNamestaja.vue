@@ -59,17 +59,6 @@
                     icon="las la-check"
                 /></q-tab>
               </div>
-              <div class="col">
-                <q-btn
-                  class="q-ml-sm"
-                  v-if="storeOmiljeno.omiljeniProizvodi.length"
-                  round
-                  text-color="dark"
-                  color="white"
-                  icon="las la-heart"
-                  @click="showFavorite = true"
-                />
-              </div>
             </div>
           </q-tabs>
         </div>
@@ -157,21 +146,6 @@
                 <div>{{ proizvod.boja }}</div>
               </div>
             </div>
-
-            <q-dialog
-              persistent
-              :maximized="maximizedToggle"
-              v-model="showFavorite"
-              transition-duration="400"
-              transition-show="slide-up"
-              transition-hide="slide-down"
-            >
-              <div class="bg-dark" style="width: 100%">
-                <omiljeno></omiljeno>
-              </div>
-
-              <!-- <div>{{ storeOmiljeno.omiljeniProizvodi }}</div> -->
-            </q-dialog>
           </q-tab-panel>
         </q-tab-panels>
       </div>
@@ -184,14 +158,6 @@
         transition-show="slide-up"
         transition-hide="slide-down"
       >
-        <!-- <q-card-section class="row text-center q-pb-none">
-          <q-btn icon="close" flat round dense v-close-popup color="white" />
-        </q-card-section> -->
-
-        <!-- <div class="text-h6 text-center">
-          <q-btn icon="close" flat round dense v-close-popup />
-        </div> -->
-
         <div style="width: 1000px; max-width: 100%" class="text-center">
           <q-btn
             color="white"
@@ -256,8 +222,6 @@ const showDetaljeAmbijenta = ref(false);
 const showSingleLargeImage = ref(false);
 const showFavorite = ref(false);
 
-// const showDodatoUomiljeno = ref(false);
-
 const selektovaniAmbijent = ref({});
 const slide = ref("");
 const multipleImagesInCarousel = ref(true);
@@ -286,14 +250,12 @@ const props = defineProps({
 });
 
 const handleProizvodjaca = computed(() => {
-  // console.log("proizvodi", props.proizvodi);
   const pr = [];
   props.proizvodi.forEach((proizvod) => {
     pr.push(proizvod.proizvodjac);
   });
-  // console.log("pr", pr);
+
   const proizvodjaci = [...new Set(pr)];
-  // console.log("proizvodjaci", proizvodjaci);
 
   return proizvodjaci;
 });
@@ -308,7 +270,6 @@ const proizvodjac = ref(filteredSaradnici.value[0].proizvodjac);
 
 const filteredProizvodi = computed(() => {
   return props.proizvodi.filter((proizvod) => {
-    // console.log("filter", proizvod.proizvodjac, proizvodjac.value);
     return proizvod.proizvodjac === proizvodjac.value;
   });
 });
@@ -317,14 +278,12 @@ function detaljiAmbijenta(proizvod, podgrupaAmbijentaImagePath) {
   if (proizvod.images) {
     selektovaniAmbijent.value = proizvod;
     slide.value = proizvod.images[0];
-    // console.log("slide1", slide.value);
+
     showDetaljeAmbijenta.value = true;
     if (proizvod.images.length === 1) {
       multipleImagesInCarousel.value = false;
     }
   } else {
-    // console.log("podgrupaAmbijentaImagePath", podgrupaAmbijentaImagePath);
-
     largeImage.value =
       podgrupaAmbijentaImagePath +
       proizvod.proizvodjac +
@@ -333,7 +292,6 @@ function detaljiAmbijenta(proizvod, podgrupaAmbijentaImagePath) {
       props.imageExt;
     showSingleLargeImage.value = true;
   }
-  // console.log("PROIZVOD", proizvod);
 }
 
 function addToFavorite(
@@ -375,12 +333,6 @@ function addToFavorite(
   color: #0c386a;
 }
 
-/* .active {
-  background: #0c386a;
-  border: 1px solid #0c386a;
-  border-radius: 5px;
-  margin: 5px;
-} */
 .active {
   background: white;
   border: 1px solid white;

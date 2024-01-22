@@ -1,22 +1,9 @@
 <template>
-  <q-page class="flex flex-center bg-dark">
+  <q-page class="flex flex-center bg-dark" style="min-height: 1200px">
     <div style="width: 100%">
       <pageHeader>
         <template #buttons-left>
-          <pageHeaderBtnBack label="Ambijenti"></pageHeaderBtnBack>
-          <!-- <q-btn
-            v-if="$route.path === '/namestaj/omiljeno'"
-            icon="chevron_left"
-            label="Ambijenti"
-            flat
-            rounded
-            dense
-            no-caps
-            color="primary"
-            to="/namestaj"
-          />
           <q-btn
-            v-else
             icon="chevron_left"
             flat
             rounded
@@ -24,7 +11,7 @@
             no-caps
             color="primary"
             v-close-popup
-          /> -->
+          />
         </template>
 
         <template #title>

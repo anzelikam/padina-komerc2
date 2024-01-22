@@ -1,11 +1,8 @@
 <template>
   <q-page class="flex flex-center">
-    <!-- <pageHeader>
-      <template #title>Kuhinje i trpezarije</template>
-    </pageHeader> -->
-
     <pageHeader>
       <template #buttons-left>
+        <mainHeader></mainHeader>
         <pageHeaderBtnBack label="Ambijenti"></pageHeaderBtnBack>
       </template>
       <template #title>Kuhinje i trpezarije</template>
@@ -35,7 +32,6 @@
 
 <script setup>
 import { ref } from "vue";
-// import { useStorePodgrupaAmbijenta } from "../stores/storePodgrupaAmbijenta";
 import { useStoreKuhinje } from "../../stores/storeKuhinje";
 import { useStoreVisenamenskiNamestaj } from "../../stores/storeVisenamenskiNamestaj";
 import selektovaniAmbijent from "../../components/saradnici/selektovaniAmbijent.vue";
@@ -45,7 +41,7 @@ const storeVisenamenskiNamestaj = useStoreVisenamenskiNamestaj();
 
 const ambijenti = ref([
   {
-    imagePath: "/images/kuhinje/",
+    imagePath: "/images/ambijenti/kuhinje/",
     slika: "/images/ambijenti/kuhinje_i_trpezarije.jpg",
     naziv: "kuhinje ambijenti",
     selektovano: storeKuhinje.kuhinje,

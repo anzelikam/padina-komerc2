@@ -66,14 +66,6 @@
 <script setup></script>
 
 <style>
-/* .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-} */
 .social {
   font-size: 30px;
   width: 50px;
@@ -85,20 +77,4 @@
 .basic_info {
   font-size: 16px;
 }
-/* .fa-facebook {
-  background: #3b5998;
-  color: white;
-}
-.fa-twitter {
-  background: #55acee;
-  color: white;
-}
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-.fa-instagram {
-  background: #125688;
-  color: white;
-} */
 </style>

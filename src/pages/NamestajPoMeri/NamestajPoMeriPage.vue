@@ -3,6 +3,7 @@
     <page>
       <pageHeader>
         <template #buttons-left>
+          <mainHeader></mainHeader>
           <!-- <pageHeaderBtnBack label="Home"></pageHeaderBtnBack> -->
           <q-btn
             to="/home"
