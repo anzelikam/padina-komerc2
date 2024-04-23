@@ -71,7 +71,7 @@ const routes = [
           },
 
           // {
-          //   path: "/home/child/grandchild",
+          //   path: "//child/grandchild",
           //   component: () => import("pages/Home/GrandchildPage.vue"),
           // },
         ],
@@ -79,12 +79,6 @@ const routes = [
       {
         path: "/namestaj-po-meri",
         component: () => import("pages/NamestajPoMeri/NamestajPoMeriPage.vue"),
-        children: [
-          {
-            path: "/home/child/grandchild",
-            component: () => import("pages/Home/GrandchildPage.vue"),
-          },
-        ],
       },
       {
         path: "/o-nama",

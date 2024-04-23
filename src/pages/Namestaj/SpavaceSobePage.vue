@@ -7,25 +7,23 @@
       </template>
       <template #title>Spavaće sobe</template>
     </pageHeader>
-    <mainHeader></mainHeader>
+
     <pageBody class="bg-dark">
+      <breadCrumbs></breadCrumbs>
       <div class="text-center">
-        <div class="text-center" style="margin-top: 70px">
-          <div class="col-2"></div>
+        <div class="col-2"></div>
 
-          <div class="col-8">
-            <h4 class="homePageText text-white">Spavaće sobe</h4>
+        <div class="col-8">
+          <h4 class="text-white">{{ nazivAmbijenta }}</h4>
 
-            <br />
-
-            <selektovaniAmbijent
-              :ambijenti="ambijenti"
-              :celineAmbijenta="celineAmbijenta"
-            >
-            </selektovaniAmbijent>
-          </div>
-          <div class="col-2"></div>
+          <selektovaniAmbijent
+            :nazivAmbijenta="nazivAmbijenta"
+            :ambijenti="ambijenti"
+            :celineAmbijenta="celineAmbijenta"
+          >
+          </selektovaniAmbijent>
         </div>
+        <div class="col-2"></div>
       </div>
     </pageBody>
   </q-page>
@@ -39,6 +37,7 @@ import selektovaniAmbijent from "../../components/saradnici/selektovaniAmbijent.
 
 const storeSpavaceSobe = useStoreSpavaceSobe();
 const storeVisenamenskiNamestaj = useStoreVisenamenskiNamestaj();
+const nazivAmbijenta = ref("Spavaće sobe");
 
 const ambijenti = ref([
   {

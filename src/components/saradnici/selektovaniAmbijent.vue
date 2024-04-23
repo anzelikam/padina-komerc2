@@ -46,10 +46,11 @@
     transition-show="slide-left"
     transition-hide="slide-right"
     animated
-    transition-duration="500"
+    transition-duration="400"
   >
     <div class="bg-white">
       <selektovanaGrupaNamestaja
+        :prethodnaStranica="nazivAmbijenta"
         :ambijenti="ambijenti"
         :proizvodi="podgrupaAmbijenta"
         :podgrupaAmbijentaImagePath="podgrupaAmbijentaImagePath"
@@ -87,9 +88,12 @@ const props = defineProps({
   celineAmbijenta: {
     type: Array,
   },
+  nazivAmbijenta: {
+    type: String,
+  },
 });
 
-const emit = defineEmits(["openDialog"]);
+// const emit = defineEmits(["openDialog"]);
 
 function selektovaniProizvodi(selected, image, name, ext) {
   console.log("selected", selected);
@@ -99,7 +103,7 @@ function selektovaniProizvodi(selected, image, name, ext) {
   podgrupaAmbijentaImagePath.value = image;
   podgrupaAmbijentaNaziv.value = name;
   podgrupaAmbijentaImageExtension.value = ext;
-  emit("openDialog");
+  // emit("openDialog");
 }
 </script>
 

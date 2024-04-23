@@ -1,11 +1,14 @@
 <template>
   <q-header class="bg-grey-2">
     <q-toolbar style="height: 70px">
+      <!-- <pageHeader>
+        <template #buttons-left> </template>
+      </pageHeader> -->
       <q-tabs
         no-caps
         active-color="accent"
         indicator-color="transparent"
-        class="text-grey-8 q-mt-sm"
+        class="text-grey-8"
       >
         <q-btn flat round dense icon="menu" class="q-mr-sm burger-menu" />
         <q-menu>
@@ -20,7 +23,9 @@
         </q-menu>
       </q-tabs>
 
-      <img src="logo/logo-padinakomerc.png" style="width: 50px" />
+      <router-link to="/home"
+        ><img src="logo/logo-padinakomerc.png" style="width: 50px"
+      /></router-link>
 
       <q-toolbar-title>
         <div class="text-h5 text-bold text-dark">
@@ -33,7 +38,7 @@
             no-caps
             active-color="accent"
             indicator-color="transparent"
-            class="text-grey-8 q-mt-sm"
+            class="text-grey-8"
           >
             <q-route-tab
               v-for="navItem in navigacija.navItems"
@@ -156,7 +161,7 @@ const celineAmbijenta = ref([
 function selektovaniProizvodi(selected, image, name, ext) {
   console.log("selected", selected);
   console.log("image", image);
-  showFavorite.value = false;
+  // showFavorite.value = false;
   podgrupaAmbijenta.value.showPodgrupu = true;
   podgrupaAmbijenta.value.podgrupe = selected;
   podgrupaAmbijenta.value.imagePath = image;
@@ -165,3 +170,17 @@ function selektovaniProizvodi(selected, image, name, ext) {
   // emit("openDialog");
 }
 </script>
+<style>
+.burger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .burger-menu {
+    display: block;
+  }
+  .list-menu {
+    display: none;
+  }
+}
+</style>

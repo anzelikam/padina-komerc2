@@ -1,9 +1,9 @@
 <template>
   <q-page class="flex flex-center bg-dark" style="min-height: 1200px">
     <div style="width: 100%">
-      <pageHeader>
+      <pageHeaderOmiljeno>
         <template #buttons-left>
-          <q-btn
+          <!-- <q-btn
             icon="chevron_left"
             flat
             rounded
@@ -11,19 +11,25 @@
             no-caps
             color="primary"
             v-close-popup
-          />
+          /> -->
         </template>
 
         <template #title>
           <span class="title">Omiljeno </span>
         </template>
-      </pageHeader>
+      </pageHeaderOmiljeno>
       <pageBody>
-        <q-card
+        <q-btn
+          icon="chevron_left"
+          label="Nazad"
           flat
-          class="text-white text-center bg-dark"
-          style="margin-top: 100px"
-        >
+          rounded
+          dense
+          no-caps
+          color="grey"
+          v-close-popup
+        />
+        <q-card flat class="text-white text-center bg-dark">
           <q-card-section>
             <div class="text-h6">OMILJENO</div>
           </q-card-section>
@@ -57,7 +63,8 @@
                 />
 
                 <p style="text-transform: capitalize" class="text-dark">
-                  {{ proizvod.naziv.toUpperCase() }}
+                  {{ proizvod.naziv.toUpperCase() }} (
+                  {{ proizvod.proizvodjac }} )
                   <q-btn
                     flat
                     icon="close"

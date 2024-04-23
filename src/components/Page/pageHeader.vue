@@ -2,24 +2,50 @@
   <header
     class="page-header q-header q-layout__section--marginal fixed-top q-header--bordered page-header bg-grey-2 absolute-top text-dark"
   >
-    <div class="q-toolbar row no-wrap items-center" style="margin-top: 60px">
+    <q-toolbar style="height: 70px">
       <slot name="buttons-left" />
 
-      <div
-        class="q-toolbar__title ellipsis absolute-center q-pl-none text-dark text-body1"
+      <router-link to="/home"
+        ><img src="logo/logo-padinakomerc.png" style="width: 50px"
+      /></router-link>
+      <q-toolbar-title>
+        <div class="text-h5 text-bold text-dark">
+          Padina Komerc
+        </div></q-toolbar-title
       >
-        <slot name="title" />
-      </div>
-    </div>
+
+      <q-btn
+        flat
+        style="margin-right: 39px"
+        v-if="storeOmiljeno.omiljeniProizvodi.length"
+        round
+        text-color="dark"
+        color="white"
+        icon="las la-heart"
+        @click="showFavorite = true"
+      />
+    </q-toolbar>
   </header>
+  <q-dialog
+    persistent
+    :maximized="maximizedToggle"
+    v-model="showFavorite"
+    transition-duration="400"
+    transition-show="slide-up"
+    transition-hide="slide-down"
+  >
+    <div class="bg-dark" style="width: 100%">
+      <omiljeno></omiljeno>
+    </div>
+  </q-dialog>
 </template>
 
 <script setup>
-import { useStoreNavigacija } from "../../stores/storeNavigacija";
+import { ref } from "vue";
 import { useStoreOmiljeno } from "../../stores/storeOmiljeno";
-import { useStorePodgrupaAmbijenta } from "../../stores/storePodgrupaAmbijenta";
+import omiljeno from "../../pages/omiljenoPage.vue";
 
-const navigacija = useStoreNavigacija();
 const storeOmiljeno = useStoreOmiljeno();
-const storePodgrupaAmbijenta = useStorePodgrupaAmbijenta();
+const showFavorite = ref(false);
+const maximizedToggle = ref(true);
 </script>

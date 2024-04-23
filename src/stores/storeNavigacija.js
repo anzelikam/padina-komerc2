@@ -2,6 +2,7 @@ import { defineStore } from "pinia";
 
 export const useStoreNavigacija = defineStore("navigacija", {
   state: () => ({
+    visible: true,
     pageTransition: false,
     iosBrowserSwipingBack: false,
     navItems: [

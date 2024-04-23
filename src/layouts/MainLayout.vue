@@ -30,6 +30,7 @@
 import { ref } from "vue";
 import { useStoreOmiljeno } from "../stores/storeOmiljeno";
 import { useStoreNavigacija } from "../stores/storeNavigacija";
+import MainHeader from "src/components/Page/mainHeader.vue";
 
 const storeOmiljeno = useStoreOmiljeno();
 const navigacija = useStoreNavigacija();

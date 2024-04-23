@@ -8,23 +8,21 @@
       <template #title>Kuhinje i trpezarije</template>
     </pageHeader>
     <pageBody class="bg-dark">
+      <breadCrumbs></breadCrumbs>
       <div class="text-center">
-        <div class="text-center" style="margin-top: 70px">
-          <div class="col-2"></div>
+        <div class="col-2"></div>
 
-          <div class="col-8">
-            <h4 class="homePageText text-white">Kuhinje i trpezarije</h4>
+        <div class="col-8">
+          <h4 class="text-white">{{ nazivAmbijenta }}</h4>
 
-            <br />
-
-            <selektovaniAmbijent
-              :ambijenti="ambijenti"
-              :celineAmbijenta="celineAmbijenta"
-            >
-            </selektovaniAmbijent>
-          </div>
-          <div class="col-2"></div>
+          <selektovaniAmbijent
+            :nazivAmbijenta="nazivAmbijenta"
+            :ambijenti="ambijenti"
+            :celineAmbijenta="celineAmbijenta"
+          >
+          </selektovaniAmbijent>
         </div>
+        <div class="col-2"></div>
       </div>
     </pageBody>
   </q-page>
@@ -38,6 +36,7 @@ import selektovaniAmbijent from "../../components/saradnici/selektovaniAmbijent.
 
 const storeKuhinje = useStoreKuhinje();
 const storeVisenamenskiNamestaj = useStoreVisenamenskiNamestaj();
+const nazivAmbijenta = ref("Kuhinje i trpezarije");
 
 const ambijenti = ref([
   {
