@@ -1,19 +1,12 @@
 <template>
   <q-page class="flex flex-center bg-positive">
-    <!-- <pageHeader>
-      <template #buttons-left>
-        <mainHeader></mainHeader>
-        <pageHeaderBtnBack label="Ambijenti"></pageHeaderBtnBack>
-      </template>
-      <template #title>Dečije sobe</template>
-    </pageHeader> -->
     <pageBody class="bg-dark">
       <breadCrumbs></breadCrumbs>
       <div class="text-center">
         <div class="col-2"></div>
 
         <div class="col-8">
-          <h4 class="text-white">{{ nazivAmbijenta }}</h4>
+          <h5 class="text-white">{{ nazivAmbijenta.toUpperCase() }}</h5>
 
           <selektovaniAmbijent
             :nazivAmbijenta="nazivAmbijenta"
@@ -66,7 +59,7 @@ const celineAmbijenta = ref([
   {
     imagePath: "/images/ormari_plakari_garderoberi/decija/",
     slika: "/icons/nocni-ormaric.png",
-    naziv: "garderoberi, komode, noćni ormarići",
+    naziv: "garderoberi, komode, ormarići",
     selektovano: storeDecijeSobe.garderoberiKomodeNocniOrmarici,
     imageExt: ".jpg",
   },

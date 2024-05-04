@@ -24,6 +24,12 @@ export const useStoreNavigacija = defineStore("navigacija", {
         icon: "las la-couch",
         label: "Nameštaj",
       },
+      {
+        root: "/katalozi",
+        to: "/katalozi",
+        icon: "list",
+        label: "Katalozi",
+      },
 
       {
         root: "/o-nama",

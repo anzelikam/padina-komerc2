@@ -15,11 +15,11 @@
       />
     </div>
 
-    <div class="row items-center" style="max-width: 800px">
+    <div class="row justify-center" style="max-width: 550px; margin: 0 auto">
       <div
         v-for="celina in celineAmbijenta"
         :key="celina.slika"
-        class="col-sm-3 col-xs-3 celinaAmbijenta"
+        class="col-xs-2 celinaAmbijenta"
         @click="
           selektovaniProizvodi(
             celina.selektovano,
@@ -30,7 +30,7 @@
         "
       >
         <img class="celinaAmbijentaIcon" :src="celina.slika" />
-        <div style="height: 50px">
+        <div style="height: 40px">
           <p class="text-white celinaAmbijentaNaziv">
             {{ celina.naziv.toLocaleUpperCase() }}
           </p>
@@ -93,8 +93,6 @@ const props = defineProps({
   },
 });
 
-// const emit = defineEmits(["openDialog"]);
-
 function selektovaniProizvodi(selected, image, name, ext) {
   console.log("selected", selected);
   console.log("image", image);
@@ -103,7 +101,6 @@ function selektovaniProizvodi(selected, image, name, ext) {
   podgrupaAmbijentaImagePath.value = image;
   podgrupaAmbijentaNaziv.value = name;
   podgrupaAmbijentaImageExtension.value = ext;
-  // emit("openDialog");
 }
 </script>
 
@@ -120,24 +117,29 @@ function selektovaniProizvodi(selected, image, name, ext) {
 }
 
 .celinaAmbijentaIcon {
-  max-width: 80px;
-  padding: 10px;
+  max-width: 60px;
+  padding-top: 5px;
+}
+.celinaAmbijentaNaziv {
+  font-size: 10px;
 }
 @media screen and (max-width: 800px) {
   .celinaAmbijentaIcon {
-    width: 60px;
+    width: 30px;
   }
   .celinaAmbijentaNaziv {
-    font-size: 12px;
+    font-size: 8px;
   }
 }
 
 .celinaAmbijenta {
-  max-width: 150px;
+  background: rgba(128, 128, 128, 0.2);
+  max-width: 100px;
   transition: ease;
   cursor: pointer;
   border: 1px solid #091d34;
   border-radius: 5px;
+  margin: 2px;
 }
 
 .celinaAmbijenta:hover {

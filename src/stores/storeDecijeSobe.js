@@ -174,18 +174,7 @@ export const useStoreDecijeSobe = defineStore("decijeSobe", {
         naziv: "tango",
         favorite: false,
       },
-      {
-        proizvodjac: "kocic",
-        img: "kocic-01",
-        naziv: "krevet 01",
-        favorite: false,
-      },
-      {
-        proizvodjac: "kocic",
-        img: "kocic-02",
-        naziv: "krevet 02",
-        favorite: false,
-      },
+
       {
         proizvodjac: "kocic",
         img: "kocic-03",
@@ -198,22 +187,11 @@ export const useStoreDecijeSobe = defineStore("decijeSobe", {
         naziv: "krevet 04",
         favorite: false,
       },
-      {
-        proizvodjac: "kocic",
-        img: "kocic-05",
-        naziv: "krevet 05",
-        favorite: false,
-      },
+
       {
         proizvodjac: "kocic",
         img: "kocic-06",
         naziv: "krevet 06",
-        favorite: false,
-      },
-      {
-        proizvodjac: "kocic",
-        img: "kocic-07",
-        naziv: "krevet 07",
         favorite: false,
       },
     ],

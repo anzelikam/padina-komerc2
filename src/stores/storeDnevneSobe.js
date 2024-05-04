@@ -255,18 +255,7 @@ export const useStoreDnevneSobe = defineStore("dnevneSobe", {
         naziv: "stela",
         favorite: false,
       },
-      // {
-      //   proizvodjac: "jela",
-      //   img: "10",
-      //   naziv: "joy",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "jela",
-      //   img: "11",
-      //   naziv: "kiki",
-      //   favorite: false,
-      // },
+
       {
         proizvodjac: "jela",
         img: "12",
@@ -279,55 +268,20 @@ export const useStoreDnevneSobe = defineStore("dnevneSobe", {
         naziv: "tara",
         favorite: false,
       },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "01",
-      //   naziv: "marco",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "02",
-      //   naziv: "poprad",
-      //   favorite: false,
-      // },
+
       {
         proizvodjac: "matis",
         img: "03",
         naziv: "valencia",
         favorite: false,
       },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "04",
-      //   naziv: "lagos",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "05",
-      //   naziv: "smocky",
-      //   favorite: false,
-      // },
+
       {
         proizvodjac: "matis",
         img: "06",
         naziv: "saturn",
         favorite: false,
       },
-
-      // {
-      //   proizvodjac: "matis",
-      //   img: "08",
-      //   naziv: "pensea",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "09",
-      //   naziv: "leon",
-      //   favorite: false,
-      // },
       {
         proizvodjac: "matis",
         img: "10",
@@ -346,24 +300,7 @@ export const useStoreDnevneSobe = defineStore("dnevneSobe", {
         naziv: "leo",
         favorite: false,
       },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "13",
-      //   naziv: "grom",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "14",
-      //   naziv: "sevilla",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "15",
-      //   naziv: "intro",
-      //   favorite: false,
-      // },
+
       {
         proizvodjac: "attrium",
         img: "01",
@@ -382,18 +319,7 @@ export const useStoreDnevneSobe = defineStore("dnevneSobe", {
         naziv: "trio",
         favorite: false,
       },
-      // {
-      //   proizvodjac: "attrium",
-      //   img: "04",
-      //   naziv: "laki",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "attrium",
-      //   img: "05",
-      //   naziv: "laki-5",
-      //   favorite: false,
-      // },
+
       {
         proizvodjac: "attrium",
         img: "06",
@@ -406,24 +332,6 @@ export const useStoreDnevneSobe = defineStore("dnevneSobe", {
         naziv: "luna",
         favorite: false,
       },
-      // {
-      //   proizvodjac: "attrium",
-      //   img: "08",
-      //   naziv: "evn",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "attrium",
-      //   img: "09",
-      //   naziv: "tina",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "attrium",
-      //   img: "10",
-      //   naziv: "nera",
-      //   favorite: false,
-      // },
     ],
 
     // ugaone garniture
@@ -684,18 +592,7 @@ export const useStoreDnevneSobe = defineStore("dnevneSobe", {
         naziv: "domino",
         favorite: false,
       },
-      // {
-      //   proizvodjac: "extrasan",
-      //   img: "06",
-      //   naziv: "ena",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "extrasan",
-      //   img: "07",
-      //   naziv: "exklusiv",
-      //   favorite: false,
-      // },
+
       {
         proizvodjac: "extrasan",
         img: "08",
@@ -732,18 +629,7 @@ export const useStoreDnevneSobe = defineStore("dnevneSobe", {
         naziv: "piano",
         favorite: false,
       },
-      // {
-      //   proizvodjac: "extrasan",
-      //   img: "14",
-      //   naziv: "sila",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "extrasan",
-      //   img: "15",
-      //   naziv: "tajland",
-      //   favorite: false,
-      // },
+
       {
         proizvodjac: "extrasan",
         img: "16",
@@ -768,12 +654,7 @@ export const useStoreDnevneSobe = defineStore("dnevneSobe", {
         naziv: "bombaj-lux",
         favorite: false,
       },
-      // {
-      //   proizvodjac: "extrasan",
-      //   img: "20",
-      //   naziv: "čester",
-      //   favorite: false,
-      // },
+
       {
         proizvodjac: "extrasan",
         img: "21",
@@ -816,12 +697,7 @@ export const useStoreDnevneSobe = defineStore("dnevneSobe", {
         naziv: "hurem",
         favorite: false,
       },
-      // {
-      //   proizvodjac: "extrasan",
-      //   img: "28",
-      //   naziv: "lora",
-      //   favorite: false,
-      // },
+
       {
         proizvodjac: "extrasan",
         img: "29",
@@ -1066,43 +942,7 @@ export const useStoreDnevneSobe = defineStore("dnevneSobe", {
         naziv: "fotelja living",
         favorite: false,
       },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "04",
-      //   naziv: "trosed polaris",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "05",
-      //   naziv: "dvosed polaris",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "06",
-      //   naziv: "fotelja polaris",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "07",
-      //   naziv: "trosed dalas",
-      //   favorite: false,
-      // },
 
-      // {
-      //   proizvodjac: "matis",
-      //   img: "08",
-      //   naziv: "dvosed dalas",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "09",
-      //   naziv: "fotelja dalas",
-      //   favorite: false,
-      // },
       {
         proizvodjac: "matis",
         img: "10",
@@ -1122,206 +962,6 @@ export const useStoreDnevneSobe = defineStore("dnevneSobe", {
         favorite: false,
       },
 
-      // {
-      //   proizvodjac: "matis",
-      //   img: "13",
-      //   naziv: "trosed malfas",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "14",
-      //   naziv: "dvosed malfas",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "15",
-      //   naziv: "fotelja malfas",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "16",
-      //   naziv: "trosed dora",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "17",
-      //   naziv: "dvosed dora",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "18",
-      //   naziv: "fotelja dora",
-      //   favorite: false,
-      // },
-
-      // {
-      //   proizvodjac: "matis",
-      //   img: "19",
-      //   naziv: "dvosed barbados",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "20",
-      //   naziv: "fotelja barbados",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "21",
-      //   naziv: "dvosed emporio",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "22",
-      //   naziv: "fotelja emporio",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "23",
-      //   naziv: "dvosed eos",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "24",
-      //   naziv: "trosed astra",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "25",
-      //   naziv: "trosed capri",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "26",
-      //   naziv: "trosed diamond",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "27",
-      //   naziv: "trosed london",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "28",
-      //   naziv: "trosed atina",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "29",
-      //   naziv: "trosed kimi",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "30",
-      //   naziv: "trosed best",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "31",
-      //   naziv: "trosed planet",
-      //   favorite: false,
-      // },
-
-      // {
-      //   proizvodjac: "matis",
-      //   img: "35",
-      //   naziv: "trosed sa električnim mehanizmom",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "36",
-      //   naziv: "fotelja armani",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "37",
-      //   naziv: "fotelja charleston",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "38",
-      //   naziv: "fotelja klara",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "39",
-      //   naziv: "fotelja nika",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "12",
-      //   naziv: "fotelja boss",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "40",
-      //   naziv: "fotelja queen",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "41",
-      //   naziv: "fotelja gracia",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "42",
-      //   naziv: "fotelja ida",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "43",
-      //   naziv: "fotelja vanilica",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "44",
-      //   naziv: "fotelja wish",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "45",
-      //   naziv: "fotelja nino",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "46",
-      //   naziv: "fotelja rimini",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "matis",
-      //   img: "47",
-      //   naziv: "fotelja vento",
-      //   favorite: false,
-      // },
       {
         proizvodjac: "numanovic",
         img: "01",
@@ -1412,48 +1052,21 @@ export const useStoreDnevneSobe = defineStore("dnevneSobe", {
         naziv: "domino",
         favorite: false,
       },
-      // {
-      //   proizvodjac: "extrasan",
-      //   img: "01",
-      //   naziv: "bosfor",
-      //   favorite: false,
-      // },
+
       {
         proizvodjac: "extrasan",
         img: "02",
         naziv: "darija",
         favorite: false,
       },
-      // {
-      //   proizvodjac: "extrasan",
-      //   img: "03",
-      //   naziv: "lotus",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "extrasan",
-      //   img: "04",
-      //   naziv: "majami",
-      //   favorite: false,
-      // },
+
       {
         proizvodjac: "extrasan",
         img: "05",
         naziv: "milano",
         favorite: false,
       },
-      // {
-      //   proizvodjac: "extrasan",
-      //   img: "06",
-      //   naziv: "nobel",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "extrasan",
-      //   img: "07",
-      //   naziv: "polo",
-      //   favorite: false,
-      // },
+
       {
         proizvodjac: "extrasan",
         img: "08",
@@ -1490,36 +1103,21 @@ export const useStoreDnevneSobe = defineStore("dnevneSobe", {
         naziv: "hilton",
         favorite: false,
       },
-      // {
-      //   proizvodjac: "extrasan",
-      //   img: "14",
-      //   naziv: "kristal",
-      //   favorite: false,
-      // },
+
       {
         proizvodjac: "extrasan",
         img: "15",
         naziv: "luna",
         favorite: false,
       },
-      // {
-      //   proizvodjac: "extrasan",
-      //   img: "16",
-      //   naziv: "odesa",
-      //   favorite: false,
-      // },
+
       {
         proizvodjac: "extrasan",
         img: "17",
         naziv: "polaris",
         favorite: false,
       },
-      // {
-      //   proizvodjac: "extrasan",
-      //   img: "18",
-      //   naziv: "stil",
-      //   favorite: false,
-      // },
+
       {
         proizvodjac: "extrasan",
         img: "19",
@@ -1544,30 +1142,14 @@ export const useStoreDnevneSobe = defineStore("dnevneSobe", {
         naziv: "harmoni",
         favorite: false,
       },
-      // {
-      //   proizvodjac: "stiljasen",
-      //   img: "01",
-      //   naziv: "boston",
-      //   favorite: false,
-      // },
+
       {
         proizvodjac: "stiljasen",
         img: "02",
         naziv: "havana",
         favorite: false,
       },
-      // {
-      //   proizvodjac: "stiljasen",
-      //   img: "03",
-      //   naziv: "havana-2",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "stiljasen",
-      //   img: "04",
-      //   naziv: "malta",
-      //   favorite: false,
-      // },
+
       {
         proizvodjac: "stiljasen",
         img: "05",
@@ -1580,43 +1162,14 @@ export const useStoreDnevneSobe = defineStore("dnevneSobe", {
         naziv: "grand",
         favorite: false,
       },
-      // {
-      //   proizvodjac: "stiljasen",
-      //   img: "07",
-      //   naziv: "dona",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "stiljasen",
-      //   img: "08",
-      //   naziv: "dona-2",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "stiljasen",
-      //   img: "09",
-      //   naziv: "penelopa",
-      //   favorite: false,
-      // },
 
-      // {
-      //   proizvodjac: "stiljasen",
-      //   img: "10",
-      //   naziv: "iva",
-      //   favorite: false,
-      // },
       {
         proizvodjac: "stiljasen",
         img: "11",
         naziv: "bosfor",
         favorite: false,
       },
-      // {
-      //   proizvodjac: "stiljasen",
-      //   img: "12",
-      //   naziv: "atina",
-      //   favorite: false,
-      // },
+
       {
         proizvodjac: "stiljasen",
         img: "13",
@@ -1629,42 +1182,21 @@ export const useStoreDnevneSobe = defineStore("dnevneSobe", {
         naziv: "exclusive",
         favorite: false,
       },
-      // {
-      //   proizvodjac: "stiljasen",
-      //   img: "15",
-      //   naziv: "helena",
-      //   favorite: false,
-      // },
+
       {
         proizvodjac: "stiljasen",
         img: "16",
         naziv: "london",
         favorite: false,
       },
-      // {
-      //   proizvodjac: "stiljasen",
-      //   img: "17",
-      //   naziv: "milano",
-      //   favorite: false,
-      // },
+
       {
         proizvodjac: "stiljasen",
         img: "18",
         naziv: "royal",
         favorite: false,
       },
-      // {
-      //   proizvodjac: "stiljasen",
-      //   img: "19",
-      //   naziv: "safari",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "stiljasen",
-      //   img: "20",
-      //   naziv: "maroko",
-      //   favorite: false,
-      // },
+
       {
         proizvodjac: "stiljasen",
         img: "21",

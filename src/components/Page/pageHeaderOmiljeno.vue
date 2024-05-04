@@ -2,19 +2,22 @@
   <header
     class="page-header q-header q-layout__section--marginal fixed-top q-header--bordered page-header bg-grey-2 absolute-top text-dark"
   >
-    <q-toolbar style="height: 70px">
+    <q-toolbar style="height: 60px">
       <slot name="buttons-left" />
-
-      <router-link to="/home"
-        ><img src="logo/logo-padinakomerc.png" style="width: 50px"
-      /></router-link>
-      <q-toolbar-title>
-        <div class="text-h5 text-bold text-dark">
-          Padina Komerc
-        </div></q-toolbar-title
-      >
+      <q-toolbar-title style="cursor: pointer">
+        <div class="row items-end" @click="goBack">
+          <img
+            src="logo/logo-padinakomerc.png"
+            style="width: 50px; margin-left: 12px"
+          />
+          <span class="text-h5 text-bold text-accent q-ml-sm">
+            Padina Komerc
+          </span>
+        </div>
+      </q-toolbar-title>
     </q-toolbar>
   </header>
+
   <q-dialog
     persistent
     :maximized="maximizedToggle"
@@ -31,9 +34,14 @@
 
 <script setup>
 import { ref } from "vue";
-import { useStoreNavigacija } from "../../stores/storeNavigacija";
-import { useStoreOmiljeno } from "../../stores/storeOmiljeno";
+import { useRouter } from "vue-router";
 import omiljeno from "../../pages/omiljenoPage.vue";
+
+const router = useRouter();
+
+function goBack() {
+  router.push("/");
+}
 
 const showFavorite = ref(false);
 const maximizedToggle = ref(true);

@@ -1,6 +1,6 @@
 <template>
   <page>
-    <pageHeader>
+    <!-- <pageHeader>
       <template #buttons-left>
         <mainHeader></mainHeader>
         <q-btn
@@ -16,7 +16,8 @@
       </template>
 
       <template #title>Nameštaj</template>
-    </pageHeader>
+    </pageHeader> -->
+    <mainHeader></mainHeader>
 
     <pageBody class="bg-dark">
       <breadCrumbs></breadCrumbs>
@@ -24,10 +25,10 @@
         <div class="col-2"></div>
 
         <div class="col-8" style="max-width: 1600px">
-          <h4 class="text-white">AMBIJENTI</h4>
-          <h5 class="text-white">
+          <h5 class="text-white">AMBIJENTI</h5>
+          <p class="text-grey text-h6">
             Veliki izbor nameštaja vrhunskih proizvođača
-          </h5>
+          </p>
           <div class="row justify-center">
             <router-link
               to="/namestaj/kuhinje-i-trpezarije"

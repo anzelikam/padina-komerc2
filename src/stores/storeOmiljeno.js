@@ -1,7 +1,4 @@
 import { defineStore } from "pinia";
-import { useStorePodgrupaAmbijenta } from "./storePodgrupaAmbijenta";
-
-const storePodgrupaAmbijenta = useStorePodgrupaAmbijenta();
 
 export const useStoreOmiljeno = defineStore("omiljeno", {
   state: () => ({

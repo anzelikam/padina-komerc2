@@ -1,19 +1,19 @@
 <template>
   <q-page class="bg-positive">
-    <pageHeader>
+    <!-- <pageHeader>
       <template #buttons-left>
         <mainHeader></mainHeader>
         <pageHeaderBtnBack label="Ambijenti"></pageHeaderBtnBack>
       </template>
       <template #title>Ostalo</template>
-    </pageHeader>
+    </pageHeader> -->
     <pageBody class="bg-dark">
       <breadCrumbs></breadCrumbs>
       <div class="= row text-center">
         <div class="col-2"></div>
 
         <div class="col-8" style="max-width: 1600px">
-          <h4 class="text-white">Ostalo</h4>
+          <h5 class="text-white">{{ nazivAmbijenta.toUpperCase() }}</h5>
 
           <br />
 
@@ -63,11 +63,11 @@ import ostaleGrupeProizvoda from "../../components/saradnici/ostaleGrupeProizvod
 const storeOstalo = useStoreOstalo();
 const showGrupaProizvoda = ref(false);
 const maximizedToggle = ref(true);
+const nazivAmbijenta = ref("Ostalo");
 
 function selektovanaGrupaProizvoda(grupaProizvoda) {
   showGrupaProizvoda.value = true;
   storeOstalo.selectedGrupa(grupaProizvoda);
-  // grupaProizvoda.value === proizvodi;
 }
 </script>
 

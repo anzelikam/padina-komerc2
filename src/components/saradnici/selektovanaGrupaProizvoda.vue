@@ -11,8 +11,6 @@
         class="bg-secondary"
         style="margin: 0 auto; min-height: 800px; max-width: 1400px"
       >
-        <!-- <div class="text-center">{{ storeOstalo.proizvod.naziv }}</div> -->
-
         <div class="text-center">
           <img
             class="imageStyle q-mt-lg q-mb-lg"
@@ -22,7 +20,7 @@
               storeOstalo.proizvod.slikaVrsta
             "
           />
-          <div style="max-width: 500px; margin: 0 auto">
+          <div style="max-width: 500px; margin: 0 auto; padding: 5px">
             {{ storeOstalo.proizvod.opis }}
           </div>
         </div>

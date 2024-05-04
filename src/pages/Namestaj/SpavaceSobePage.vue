@@ -1,20 +1,21 @@
 <template>
   <q-page class="flex flex-center bg-positive">
-    <pageHeader>
+    <!-- <pageHeader>
       <template #buttons-left>
         <mainHeader></mainHeader>
         <pageHeaderBtnBack label="Ambijenti"></pageHeaderBtnBack>
       </template>
       <template #title>Spavaće sobe</template>
-    </pageHeader>
+    </pageHeader> -->
 
+    <!-- <mainHeader></mainHeader> -->
     <pageBody class="bg-dark">
       <breadCrumbs></breadCrumbs>
       <div class="text-center">
         <div class="col-2"></div>
 
         <div class="col-8">
-          <h4 class="text-white">{{ nazivAmbijenta }}</h4>
+          <h5 class="text-white">{{ nazivAmbijenta.toUpperCase() }}</h5>
 
           <selektovaniAmbijent
             :nazivAmbijenta="nazivAmbijenta"
@@ -58,6 +59,13 @@ const celineAmbijenta = ref([
     imageExt: ".jpg",
   },
   {
+    imagePath: "/images/krevet_samac/",
+    slika: "/icons/krevet-samac.png",
+    naziv: "drveni kreveti",
+    selektovano: storeSpavaceSobe.drveniKreveti,
+    imageExt: ".jpg",
+  },
+  {
     imagePath: "/images/nocni_ormarici/",
     slika: "/icons/nocni-ormaric.png",
     naziv: "noćni ormarići",
@@ -69,12 +77,13 @@ const celineAmbijenta = ref([
     slika: "/icons/komoda.png",
     naziv: "komode",
     selektovano: storeVisenamenskiNamestaj.komode,
-    imageExt: ".png",
+    imageExt: ".jpg",
   },
+
   {
     imagePath: "/images/ormari_plakari_garderoberi/spavaca/",
     slika: "/icons/plakari.png",
-    naziv: "ormari, plakari, garderoberi",
+    naziv: "ormari, plakari",
     selektovano: storeSpavaceSobe.ormariPlakariGarderoberi,
     imageExt: ".jpg",
   },

@@ -1,17 +1,15 @@
 <template>
   <pageHeader>
-    <template #buttons-left>
-      <!-- <mainHeader></mainHeader> -->
-      <!-- <pageHeaderBtnBack label="Ostalo"></pageHeaderBtnBack> -->
-      <!-- <q-btn icon="chevron_left" flat round dense v-close-popup /> -->
-    </template>
+    <template #buttons-left> </template>
     <template #title>{{ grupaProizvoda.naziv }}</template>
   </pageHeader>
 
   <div style="margin-top: 80px">
     <breadCrumbs :prethodnaStranica="prethodnaStranica"></breadCrumbs>
 
-    <h4 class="text-center text-white">{{ grupaProizvoda.naziv }}</h4>
+    <h5 class="text-center text-white" style="text-transform: uppercase">
+      {{ grupaProizvoda.naziv }}
+    </h5>
 
     <div class="row text-center">
       <div class="col-2"></div>
@@ -37,24 +35,10 @@
               {{ proizvod.naziv.toLocaleUpperCase() }}
             </p>
 
-            <!-- rasveta, sudopere -->
-            <div style="max-width: 500px; margin: 0 auto">
+            <div style="max-width: 500px; margin: 0 auto; padding: 10px">
               {{ grupaProizvoda.opis }}
             </div>
             <br />
-            <!-- <q-dialog
-              v-model="showDetalje"
-              :maximized="maximizedToggle"
-              transition-show="slide-left"
-              transition-hide="slide-right"
-              animated
-              transition-duration="400"
-            >
-              <selektovanaGrupaProizvoda
-                :grupaProizvoda="grupaProizvoda"
-                :proizvod="proizvod"
-              ></selektovanaGrupaProizvoda>
-            </q-dialog> -->
           </div>
         </div>
       </div>
@@ -75,28 +59,6 @@
     </div>
   </div>
   <br /><br />
-
-  <!-- <div
-    class="q-pa-md"
-    v-for="proizvod in grupaProizvoda.vrste"
-    :key="proizvod.index"
-  >
-    <div style="max-width: 600px">
-      <q-tabs v-model="tab" align="justify" narrow-indicator class="q-mb-lg">
-        <div class="row">
-          <q-tab :name="proizvod.slikaVrsta" class="col"
-            ><img
-              class="q-ma-md text-white imageStyle"
-              :src="
-                grupaProizvoda.imgPath +
-                proizvod.slikaVrstapath +
-                proizvod.slikaVrsta
-              "
-          /></q-tab>
-        </div>
-      </q-tabs>
-    </div>
-  </div> -->
 </template>
 
 <script setup>
@@ -104,20 +66,11 @@ import { ref } from "vue";
 import selektovanaGrupaProizvoda from "../saradnici/selektovanaGrupaProizvoda.vue";
 import { useStoreOstalo } from "../../stores/storeOstalo";
 
-const tab = ref("mails");
-const splitterModel = ref(20);
 const showDetalje = ref(false);
 const storeOstalo = useStoreOstalo();
 const maximizedToggle = ref(true);
 const grupaProizvoda = ref(storeOstalo.grupaProizvoda);
 const prethodnaStranica = "Ostalo";
-const proizvod = ref(storeOstalo.proizvod);
-
-// const props = defineProps({
-//   grupaProizvoda: {
-//     type: Object,
-//   },
-// });
 
 function handleShowDetalje(proizvod) {
   if (proizvod.opis) {

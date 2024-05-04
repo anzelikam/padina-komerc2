@@ -1,10 +1,9 @@
 <template>
   <div>
     <page>
-      <pageHeader>
+      <!-- <pageHeader>
         <template #buttons-left>
           <mainHeader></mainHeader>
-          <!-- <pageHeaderBtnBack label="Home"></pageHeaderBtnBack> -->
           <q-btn
             to="/home"
             icon="chevron_left"
@@ -17,53 +16,33 @@
           ></q-btn>
         </template>
         <template #title>Nameštaj po meri</template>
-      </pageHeader>
-      <pageBody>
-        <div>
-          <!-- <div>
-            <p>
-              Otkrijte širok izbor stilskog i izdržljivog namještaja u Padina
-              komerc. Oplemenite svoj životni prostor već danas!
-            </p>
-            <p>Unaprijedite svoj dom namještajem po meri</p>
-          </div> -->
-          <div class="homePageCont text-center row">
-            <div class="col-2"></div>
-            <div class="col-8" style="max-width: 1600px">
-              <h5 class="text-dark text-center">
-                Nameštaj po meri napravljen u našoj radionici
-              </h5>
-              <div>
-                <p>
-                  Otkrijte širok izbor stilskog i izdržljivog namještaja u
-                  Padina komerc. Oplemenite svoj životni prostor već danas!
-                </p>
-              </div>
-              <div class="flex flex-center">
-                <img
-                  class="q-ma-md"
-                  style="height: 170px; max-width: 300px"
-                  src="/images/homePage.jpg"
-                />
-                <img
-                  class="q-ma-md"
-                  style="height: 170px; max-width: 300px"
-                  src="/images/homePage.jpg"
-                />
-                <img
-                  class="q-ma-md"
-                  style="height: 170px; max-width: 300px"
-                  src="/images/homePage.jpg"
-                />
-              </div>
+      </pageHeader> -->
+      <mainHeader></mainHeader>
+      <pageBody class="bg-dark">
+        <div class="homePageCont text-center row">
+          <div class="col-2"></div>
+          <div class="col-8" style="max-width: 1600px">
+            <h4 class="text-white text-center">
+              Nameštaj po meri napravljen u našoj radionici
+            </h4>
+            <div>
+              <p class="text-white">
+                Dođite da zajedno pronađemo rešenje, koje će odgovarati vašem
+                ukusu, potrebama i raspoloživom prostoru u vašem domu.
+              </p>
             </div>
-
-            <div class="col-2"></div>
+            <div class="flex flex-center">
+              <galerija></galerija>
+            </div>
           </div>
+
+          <div class="col-2"></div>
         </div>
       </pageBody>
     </page>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import galerija from "../../components/proizvodnja/galerijaNasihProizvoda.vue";
+</script>

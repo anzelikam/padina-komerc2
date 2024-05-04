@@ -31,12 +31,7 @@ export const useStoreOstalo = defineStore("ostalo", {
             opis: "U ponudi ima različitih dekora i debljina laminata. Ponudu ja najbolje videti na licu mesta, pa peporučujemo posetu salonu. ",
             naziv: "laminati",
           },
-          // {
-          //   slikaVrstapath: "laminati/",
-          //   slikaVrsta: "laminati-restlovi.jpg",
-          //   opis: "lorem laminati restlovi",
-          //   naziv: "laminati restlovi",
-          // },
+
           {
             slikaVrstapath: "laminat_lajsne/",
             slikaVrsta: "laminat-lajsna.jpg",

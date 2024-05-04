@@ -11,9 +11,8 @@
         "
       >
         <div class="text-center header q-pa-sm">
-          <div class="text-h2 text-bold text-accent">Padina</div>
-          <div class="text-h2 text-bold text-dark">Komerc</div>
-          <div class="text-h5 text-dark">
+          <div class="text-accent">Padina Komerc</div>
+          <div class="text-h6 text-dark">
             ...zajedno stvaramo dom Vaših snova
           </div>
         </div>
@@ -26,7 +25,13 @@
             style="border-right: 1px solid grey"
           >
             <router-link to="/namestaj-po-meri" style="text-decoration: none">
-              <h4 class="text-center text-positive text-bold">
+              <h4 class="text-center text-positive text-weight-medium">
+                Naši proizvodi
+              </h4>
+              <div class="row q-ml-md q-mr-md" style="height: 240px">
+                <img src="images/home/nasiProizvodi/kolaz.jpg" class="col" />
+              </div>
+              <!-- <h4 class="text-center text-positive text-weight-medium">
                 Naši proizvodi
               </h4>
               <div class="row q-ml-md q-mr-md" style="height: 120px">
@@ -40,7 +45,7 @@
                 <img src="images/home/nasiProizvodi/08.jpg" class="col" />
                 <img src="images/home/nasiProizvodi/02.jpg" class="col" />
                 <img src="images/home/nasiProizvodi/10.jpg" class="col" />
-              </div>
+              </div> -->
             </router-link>
           </div>
           <div
@@ -48,7 +53,9 @@
             style="border-right: 1px solid grey"
           >
             <router-link to="/namestaj" style="text-decoration: none">
-              <h4 class="text-center text-positive text-bold">Nameštaj</h4>
+              <h4 class="text-center text-positive text-weight-medium">
+                Nameštaj
+              </h4>
               <div
                 class="proizvodjaci_saradnici flex flex-center"
                 style="max-width: 400px; margin: 0 auto"
@@ -72,7 +79,9 @@
             style="border-right: 1px solid grey"
           >
             <router-link to="/o-nama" style="text-decoration: none">
-              <h4 class="text-center text-positive text-bold">O nama</h4>
+              <h4 class="text-center text-positive text-weight-medium">
+                O nama
+              </h4>
 
               <div class="text-center">
                 <p class="text-positive text-center q-ma-xl text-subtitle1">
@@ -94,21 +103,10 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
 import { useStoreSaradnici } from "../../stores/storeSaradnici";
-import Footer from "../../components/cFooter.vue";
-import { useStoreNavigacija } from "../../stores/storeNavigacija";
-import { useStoreOmiljeno } from "../../stores/storeOmiljeno";
+import Footer from "../../components/headerAndFooter/cFooter.vue";
 
-import { useStorePodgrupaAmbijenta } from "../../stores/storePodgrupaAmbijenta";
-import selektovanaGrupaNamestaja from "../../components/saradnici/selektovanaGrupaNamestaja.vue";
-
-const navigacija = useStoreNavigacija();
 const storeSaradnici = useStoreSaradnici();
-const storeOmiljeno = useStoreOmiljeno();
-const maximizedToggle = ref(true);
-const storePodgrupaAmbijenta = useStorePodgrupaAmbijenta();
-const podgrupaAmbijenta = ref(storePodgrupaAmbijenta.podgrupaAmbijenta);
 </script>
 
 <style>
@@ -156,6 +154,10 @@ const podgrupaAmbijenta = ref(storePodgrupaAmbijenta.podgrupaAmbijenta);
 .burger-menu {
   display: none;
 }
+.header {
+  font-size: 50px;
+  font-weight: 600;
+}
 
 @media screen and (max-width: 800px) {
   .burger-menu {
@@ -163,6 +165,12 @@ const podgrupaAmbijenta = ref(storePodgrupaAmbijenta.podgrupaAmbijenta);
   }
   .list-menu {
     display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .header {
+    font-size: 44px;
+    font-weight: 800;
   }
 }
 </style>

@@ -8,28 +8,6 @@ const routes = [
       {
         path: "/home",
         component: () => import("pages/Home/HomePage.vue"),
-        // children: [
-        //   {
-        //     path: "/home/namestaj",
-        //     component: () => import("pages/Home/NamestajSaradniciPage.vue"),
-        //     children: [
-        //       {
-        //         path: "/home/child/grandchild",
-        //         component: () => import("pages/Home/GrandchildPage.vue"),
-        //       },
-        //     ],
-        //   },
-        //   {
-        //     path: "/home/namestaj-po-meri",
-        //     component: () => import("pages/Home/NamestajPoMeriPage.vue"),
-        //     children: [
-        //       {
-        //         path: "/home/child/grandchild",
-        //         component: () => import("pages/Home/GrandchildPage.vue"),
-        //       },
-        //     ],
-        //   },
-        // ],
       },
 
       {
@@ -65,16 +43,20 @@ const routes = [
             path: "/namestaj/ostalo",
             component: () => import("pages/Namestaj/OstaloPage.vue"),
           },
-          {
-            path: "/namestaj/omiljeno",
-            component: () => import("pages/omiljenoPage.vue"),
-          },
-
           // {
-          //   path: "//child/grandchild",
-          //   component: () => import("pages/Home/GrandchildPage.vue"),
+          //   path: "/namestaj/omiljeno",
+          //   component: () => import("pages/omiljenoPage.vue"),
           // },
         ],
+      },
+      {
+        path: "/omiljeno",
+        component: () => import("pages/omiljenoPage.vue"),
+      },
+      {
+        path: "/selektovanaGrupa",
+        component: () =>
+          import("components/saradnici/selektovanaGrupaNamestaja.vue"),
       },
       {
         path: "/namestaj-po-meri",
@@ -84,62 +66,12 @@ const routes = [
         path: "/o-nama",
         component: () => import("pages/Onama/oNamaPage.vue"),
       },
-
-      // {
-      //   path: "/omiljeno",
-      //   component: () => import("pages/omiljenoPage.vue"),
-      // },
+      {
+        path: "/katalozi",
+        component: () => import("pages/Katalozi/KataloziPage.vue"),
+      },
     ],
   },
-  // {
-  //   path: "/home/namestaj",
-  //   component: () => import("pages/NamestajSaradniciPage.vue"),
-  // },
-  // {
-  //   path: "/home/namestaj-po-meri",
-  //   component: () => import("pages/NamestajPoMeriPage.vue"),
-  // },
-  // {
-  //   path: "/home/kuhinje-i-trpezarije",
-  //   component: () => import("pages/KuhinjeITrpezarijePage.vue"),
-  // },
-  // {
-  //   path: "/home/dnevne-sobe",
-  //   component: () => import("pages/DnevneSobePage.vue"),
-  // },
-  // {
-  //   path: "/home/spavace-sobe",
-  //   component: () => import("pages/SpavaceSobePage.vue"),
-  // },
-  // {
-  //   path: "/home/decije-sobe",
-  //   component: () => import("pages/DecijeSobePage.vue"),
-  // },
-  // {
-  //   path: "/home/predsoblja",
-  //   component: () => import("pages/PredsobljaPage.vue"),
-  // },
-  // {
-  //   path: "/home/kancelarije",
-  //   component: () => import("pages/KancelarijePage.vue"),
-  // },
-  // {
-  //   path: "/home/ostalo",
-  //   component: () => import("pages/OstaloPage.vue"),
-  // },
-  // {
-  //   path: "/home/o-nama",
-  //   component: () => import("pages/oNamaPage.vue"),
-  // },
-
-  // {
-  //   path: "/home/selektovano",
-  //   component: () => import("pages/selektovanoPage.vue"),
-  // },
-  // {
-  //   path: "/omiljeno",
-  //   component: () => import("pages/omiljenoPage.vue"),
-  // },
 
   // Always leave this as last one,
   // but you can also remove it

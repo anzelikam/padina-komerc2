@@ -1,50 +1,46 @@
 <template>
-  <q-page class="flex flex-center bg-dark" style="min-height: 1200px">
-    <div style="width: 100%">
-      <pageHeaderOmiljeno>
-        <template #buttons-left>
-          <!-- <q-btn
-            icon="chevron_left"
-            flat
-            rounded
-            dense
-            no-caps
-            color="primary"
-            v-close-popup
-          /> -->
-        </template>
-
-        <template #title>
-          <span class="title">Omiljeno </span>
-        </template>
-      </pageHeaderOmiljeno>
-      <pageBody>
-        <q-btn
-          icon="chevron_left"
-          label="Nazad"
-          flat
-          rounded
-          dense
-          no-caps
-          color="grey"
-          v-close-popup
-        />
+  <q-page class="flex flex-center bg-dark">
+    <pageHeaderOmiljeno> </pageHeaderOmiljeno>
+    <pageBody>
+      <!-- <q-btn
+        icon="chevron_left"
+        label="Nazad"
+        flat
+        rounded
+        dense
+        no-caps
+        color="grey"
+        v-close-popup
+      /> -->
+      <q-btn
+        icon="chevron_left"
+        label="Nazad"
+        flat
+        rounded
+        dense
+        no-caps
+        color="grey"
+        @click="router.back()"
+      />
+      <div style="max-width: 1400px; margin: 0 auto">
         <q-card flat class="text-white text-center bg-dark">
-          <q-card-section>
-            <div class="text-h6">OMILJENO</div>
-          </q-card-section>
+          <div class="text-h6">OMILJENO</div>
 
           <q-card-section class="q-pt-none">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-            repellendus sit voluptate voluptas eveniet porro. Rerum blanditiis
-            perferendis totam, ea at omnis vel numquam exercitationem aut, natus
-            minima, porro labore.
+            Uporedite vaše izabrane proizvode.
           </q-card-section>
-          <q-card-section>
-            <div
-              style="max-width: 1400px; margin: 0 auto"
-              class="row justify-center bg-secondary"
-            >
+          <div style="margin-bottom: 40px">
+            <q-btn
+              flat
+              style="color: grey"
+              icon="delete"
+              label="OBRIŠI SVE"
+              class="float-right"
+              @click="deleteAll"
+            />
+          </div>
+          <q-card-section class="bg-secondary">
+            <div class="row justify-center">
               <div
                 v-for="(proizvod, index) in omiljeniProizvodi"
                 :key="proizvod.img"
@@ -76,8 +72,8 @@
             </div>
           </q-card-section>
         </q-card>
-      </pageBody>
-    </div>
+      </div>
+    </pageBody>
   </q-page>
 </template>
 
@@ -98,12 +94,13 @@ function deleteProizvod(index, proizvod) {
   storeOmiljeno.favorite = false;
   storePodgrupaAmbijenta.favorite = false;
   storeOmiljeno.deleteOmiljeniProizvod(index, proizvod);
+
   if (omiljeniProizvodi.value.length === 0) {
-    router.push("/namestaj");
+    router.push("/");
   }
 }
-
-function hideFavorite() {
-  emit("closeOmiljeno");
+function deleteAll() {
+  omiljeniProizvodi.value.length = 0;
+  router.push("/");
 }
 </script>

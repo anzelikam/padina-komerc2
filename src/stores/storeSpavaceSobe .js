@@ -235,12 +235,6 @@ export const useStoreSpavaceSobe = defineStore("spavaceSobe", {
         naziv: "titto",
         favorite: false,
       },
-      // {
-      //   proizvodjac: "stiljasen",
-      //   img: "hotelski-lezaj",
-      //   naziv: "hotelski ležaj",
-      //   favorite: false,
-      // },
 
       {
         proizvodjac: "stiljasen",
@@ -278,12 +272,7 @@ export const useStoreSpavaceSobe = defineStore("spavaceSobe", {
         naziv: "nevada",
         favorite: false,
       },
-      // {
-      //   proizvodjac: "stiljasen",
-      //   img: "parma",
-      //   naziv: "parma",
-      //   favorite: false,
-      // },
+
       {
         proizvodjac: "stiljasen",
         img: "stil",
@@ -610,6 +599,32 @@ export const useStoreSpavaceSobe = defineStore("spavaceSobe", {
         proizvodjac: "numanovic",
         img: "scarlet",
         naziv: "scarlet",
+        favorite: false,
+      },
+    ],
+    drveniKreveti: [
+      {
+        proizvodjac: "kocic",
+        img: "kocic-01",
+        naziv: "krevet 01",
+        favorite: false,
+      },
+      {
+        proizvodjac: "kocic",
+        img: "kocic-02",
+        naziv: "krevet 02",
+        favorite: false,
+      },
+      {
+        proizvodjac: "kocic",
+        img: "kocic-05",
+        naziv: "krevet 05",
+        favorite: false,
+      },
+      {
+        proizvodjac: "kocic",
+        img: "kocic-07",
+        naziv: "krevet 07",
         favorite: false,
       },
     ],

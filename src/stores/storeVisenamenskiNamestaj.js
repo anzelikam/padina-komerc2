@@ -1015,24 +1015,7 @@ export const useStoreVisenamenskiNamestaj = defineStore("visenamenski", {
         naziv: "harmoni",
         favorite: false,
       },
-      // {
-      //   proizvodjac: "extrasan",
-      //   img: "13",
-      //   naziv: "amor",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "extrasan",
-      //   img: "14",
-      //   naziv: "tango",
-      //   favorite: false,
-      // },
-      // {
-      //   proizvodjac: "extrasan",
-      //   img: "15",
-      //   naziv: "junior",
-      //   favorite: false,
-      // },
+
       {
         proizvodjac: "extrasan",
         img: "16",

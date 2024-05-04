@@ -2,19 +2,38 @@
   <header
     class="page-header q-header q-layout__section--marginal fixed-top q-header--bordered page-header bg-grey-2 absolute-top text-dark"
   >
-    <q-toolbar style="height: 70px">
+    <q-toolbar style="height: 60px">
       <slot name="buttons-left" />
-
-      <router-link to="/home"
-        ><img src="logo/logo-padinakomerc.png" style="width: 50px"
-      /></router-link>
       <q-toolbar-title>
-        <div class="text-h5 text-bold text-dark">
-          Padina Komerc
-        </div></q-toolbar-title
-      >
+        <router-link to="/home" style="text-decoration: none">
+          <div class="row items-end">
+            <img
+              src="logo/logo-padinakomerc.png"
+              style="width: 50px; margin-left: 12px"
+            />
+            <span
+              class="text-h5 text-bold text-accent q-ml-sm"
+              v-if="$route.path !== '/home'"
+            >
+              Padina Komerc
+            </span>
+          </div>
+        </router-link>
+      </q-toolbar-title>
 
-      <q-btn
+      <router-link to="/omiljeno" style="text-decoration: none">
+        <q-btn
+          flat
+          style="margin-right: 39px"
+          v-if="storeOmiljeno.omiljeniProizvodi.length"
+          round
+          text-color="dark"
+          color="white"
+          icon="las la-heart"
+        />
+      </router-link>
+
+      <!-- <q-btn
         flat
         style="margin-right: 39px"
         v-if="storeOmiljeno.omiljeniProizvodi.length"
@@ -23,7 +42,7 @@
         color="white"
         icon="las la-heart"
         @click="showFavorite = true"
-      />
+      /> -->
     </q-toolbar>
   </header>
   <q-dialog

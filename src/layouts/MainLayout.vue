@@ -5,12 +5,13 @@
     </q-page-container>
 
     <q-footer
+      breakpoint="700"
       bordered
-      class="bg-grey-3 text-primary"
-      v-if="$route.path !== '/home'"
+      class="bg-grey-3 text-primary showFooter"
     >
       <q-tabs
         no-caps
+        style="max-width: 380px; margin: 0 auto"
         active-color="primary"
         indicator-color="transparent"
         class="text-grey-8"
@@ -27,10 +28,8 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
 import { useStoreOmiljeno } from "../stores/storeOmiljeno";
 import { useStoreNavigacija } from "../stores/storeNavigacija";
-import MainHeader from "src/components/Page/mainHeader.vue";
 
 const storeOmiljeno = useStoreOmiljeno();
 const navigacija = useStoreNavigacija();
@@ -60,6 +59,9 @@ storeOmiljeno.getOmiljeniProizvodiFromLocalS();
 .toggleNavButtons {
   display: none;
 }
+.showFooter {
+  display: block;
+}
 
 @media screen and (min-width: 790px) {
   .toggleMenuButton {
@@ -67,6 +69,9 @@ storeOmiljeno.getOmiljeniProizvodiFromLocalS();
   }
   .toggleNavButtons {
     display: block;
+  }
+  .showFooter {
+    display: none;
   }
 }
 
@@ -79,3 +84,4 @@ storeOmiljeno.getOmiljeniProizvodiFromLocalS();
   opacity: 0;
 }
 </style>
+<!-- v-if="$route.path !== '/home'" -->
