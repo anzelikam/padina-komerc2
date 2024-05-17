@@ -29,23 +29,8 @@
                 Naši proizvodi
               </h4>
               <div class="row q-ml-md q-mr-md" style="height: 240px">
-                <img src="images/home/nasiProizvodi/kolaz.jpg" class="col" />
+                <img src="images/home/nasiProizvodi/kolaz.webp" class="col" />
               </div>
-              <!-- <h4 class="text-center text-positive text-weight-medium">
-                Naši proizvodi
-              </h4>
-              <div class="row q-ml-md q-mr-md" style="height: 120px">
-                <img src="images/home/nasiProizvodi/01.jpg" class="col" />
-                <img src="images/home/nasiProizvodi/03.jpg" class="col" />
-                <img src="images/home/nasiProizvodi/06.jpg" class="col" />
-                <img src="images/home/nasiProizvodi/05.jpg" class="col" />
-              </div>
-              <div class="row q-ml-md q-mr-md" style="height: 120px">
-                <img src="images/home/nasiProizvodi/07.jpg" class="col" />
-                <img src="images/home/nasiProizvodi/08.jpg" class="col" />
-                <img src="images/home/nasiProizvodi/02.jpg" class="col" />
-                <img src="images/home/nasiProizvodi/10.jpg" class="col" />
-              </div> -->
             </router-link>
           </div>
           <div
@@ -109,12 +94,11 @@ import Footer from "../../components/headerAndFooter/cFooter.vue";
 const storeSaradnici = useStoreSaradnici();
 </script>
 
-<style>
+<style scoped>
 .wallpaper {
-  background-image: url("images/home/homeBackgroundImage.jpg");
+  background-image: url("/images/home/homeBackgroundImage.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #cccccc;
 }
 .transbox {
   background-color: #ffffff;
@@ -174,3 +158,8 @@ const storeSaradnici = useStoreSaradnici();
   }
 }
 </style>
+
+<!-- background-image: url("images/home/homeBackgroundImage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #cccccc; -->

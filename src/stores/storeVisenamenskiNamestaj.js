@@ -632,18 +632,13 @@ export const useStoreVisenamenskiNamestaj = defineStore("visenamenski", {
         naziv: "dvokrilna nadogradnja",
         favorite: false,
       },
-      {
-        proizvodjac: "djuka",
-        img: "05",
-        naziv: "trokrilna nadogradnja",
-        favorite: false,
-      },
-      {
-        proizvodjac: "djuka",
-        img: "06",
-        naziv: "jednokrilna serija x",
-        favorite: false,
-      },
+
+      // {
+      //   proizvodjac: "djuka",
+      //   img: "06",
+      //   naziv: "dvokrilna serija x",
+      //   favorite: false,
+      // },
       {
         proizvodjac: "djuka",
         img: "07",
@@ -883,12 +878,12 @@ export const useStoreVisenamenskiNamestaj = defineStore("visenamenski", {
         naziv: "new york",
         favorite: false,
       },
-      {
-        proizvodjac: "numanovic",
-        img: "15",
-        naziv: "boni",
-        favorite: false,
-      },
+      // {
+      //   proizvodjac: "numanovic",
+      //   img: "15",
+      //   naziv: "boni",
+      //   favorite: false,
+      // },
       {
         proizvodjac: "numanovic",
         img: "16",

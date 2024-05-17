@@ -43,10 +43,10 @@ const nazivAmbijenta = ref("Spavaće sobe");
 const ambijenti = ref([
   {
     imagePath: "/images/ambijenti/spavace_sobe/",
-    slika: "/images/ambijenti/spavace_sobe.jpg",
+    slika: "/images/ambijenti/spavace_sobe.webp",
     naziv: "spavaće sobe ambijenti",
     selektovano: storeSpavaceSobe.spavaceSobe,
-    imageExt: ".jpg",
+    imageExt: ".webp",
   },
 ]);
 
@@ -56,28 +56,28 @@ const celineAmbijenta = ref([
     slika: "/icons/francuski-lezaj.png",
     naziv: "francuski ležajevi",
     selektovano: storeSpavaceSobe.francuskiLezajevi,
-    imageExt: ".jpg",
+    imageExt: ".webp",
   },
   {
     imagePath: "/images/krevet_samac/",
     slika: "/icons/krevet-samac.png",
     naziv: "drveni kreveti",
     selektovano: storeSpavaceSobe.drveniKreveti,
-    imageExt: ".jpg",
+    imageExt: ".webp",
   },
   {
     imagePath: "/images/nocni_ormarici/",
     slika: "/icons/nocni-ormaric.png",
     naziv: "noćni ormarići",
     selektovano: storeSpavaceSobe.nocniOrmarici,
-    imageExt: ".jpg",
+    imageExt: ".webp",
   },
   {
     imagePath: "/images/visenamenski_namestaj/komode/",
     slika: "/icons/komoda.png",
     naziv: "komode",
     selektovano: storeVisenamenskiNamestaj.komode,
-    imageExt: ".jpg",
+    imageExt: ".webp",
   },
 
   {
@@ -85,7 +85,7 @@ const celineAmbijenta = ref([
     slika: "/icons/plakari.png",
     naziv: "ormari, plakari",
     selektovano: storeSpavaceSobe.ormariPlakariGarderoberi,
-    imageExt: ".jpg",
+    imageExt: ".webp",
   },
 ]);
 </script>

@@ -77,8 +77,14 @@
                   <img
                     :src="saradnik.logo"
                     style="width: 120px"
-                    class="q-mr-md q-mb-lg"
+                    class="q-mr-md q-mt-sm"
                   />
+
+                  <div
+                    style="height: 2px; width: 100%"
+                    :class="'bg-' + saradnik.boja"
+                    class="q-mb-lg"
+                  ></div>
                 </div>
               </div>
 

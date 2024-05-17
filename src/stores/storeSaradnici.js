@@ -57,7 +57,7 @@ export const useStoreSaradnici = defineStore("saradnici", {
         proizvodjac: "kocic",
         logo: "/logo/logo-kocic.png",
         link: "https://drvoprodukt-kocic-doo.business.site/",
-        boja: "light-blue-3",
+        boja: "cyan",
       },
       {
         proizvodjac: "belibor",

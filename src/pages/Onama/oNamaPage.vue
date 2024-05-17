@@ -7,7 +7,7 @@
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-3 text-center">
           <img
             style="height: 220px; max-width: 350px; margin: 0 auto"
-            src="/images/slike-lokala/lokal9.jpg"
+            src="/images/slike-lokala/lokal9.webp"
           />
         </div>
         <div class="col-xs-12 col-sm-12 col-md-7 col-lg-9 q-pa-md">

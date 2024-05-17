@@ -37,7 +37,7 @@
               <img
                 class="q-ma-md naziv_ambijenta_slika"
                 style="height: 170px; max-width: 300px"
-                src="/images/ambijenti/kuhinje_i_trpezarije.jpg"
+                src="/images/ambijenti/kuhinje_i_trpezarije.webp"
               />
               <p>kuhinje i trpezarije</p>
             </router-link>
@@ -49,7 +49,7 @@
               <img
                 class="q-ma-md naziv_ambijenta_slika"
                 style="height: 170px; max-width: 300px"
-                src="/images/ambijenti/dnevne_sobe.jpg"
+                src="/images/ambijenti/dnevne_sobe.webp"
               />
               <p>dnevne sobe</p>
             </router-link>
@@ -61,7 +61,7 @@
               <img
                 class="q-ma-md naziv_ambijenta_slika"
                 style="height: 170px; max-width: 300px"
-                src="/images/ambijenti/spavace_sobe.jpg"
+                src="/images/ambijenti/spavace_sobe.webp"
               />
               <p>spavaće sobe</p>
             </router-link>
@@ -73,7 +73,7 @@
               <img
                 class="q-ma-md naziv_ambijenta_slika"
                 style="height: 170px; max-width: 300px"
-                src="/images/ambijenti/decije_sobe.jpg"
+                src="/images/ambijenti/decije_sobe.webp"
               />
               <p>dečije sobe</p>
             </router-link>
@@ -84,7 +84,7 @@
               <img
                 class="q-ma-md naziv_ambijenta_slika"
                 style="height: 170px; max-width: 300px"
-                src="/images/ambijenti/predsoblja.jpg"
+                src="/images/ambijenti/predsoblja.webp"
               />
               <p>predsoblja</p>
             </router-link>
@@ -95,7 +95,7 @@
               <img
                 class="q-ma-md naziv_ambijenta_slika"
                 style="height: 170px; max-width: 300px"
-                src="/images/ambijenti/kancelarije.jpg"
+                src="/images/ambijenti/kancelarije.webp"
               />
               <p>kancelarije</p>
             </router-link>
@@ -107,7 +107,7 @@
               <img
                 class="q-ma-md naziv_ambijenta_slika"
                 style="height: 170px; max-width: 300px"
-                src="/images/ambijenti/ostalo.jpg"
+                src="/images/ambijenti/ostalo.webp"
               />
               <p>ostalo</p>
             </router-link>

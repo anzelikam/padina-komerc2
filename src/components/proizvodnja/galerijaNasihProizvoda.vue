@@ -6,7 +6,7 @@
           <div v-if="n > 0 && n <= 6">
             <img
               :src="
-                './images/namestaj_po_meri/realizovani_projekti/' + n + '.jpg'
+                './images/namestaj_po_meri/realizovani_projekti/' + n + '.webp'
               "
               @click="zoomImage(n)"
             />
@@ -20,7 +20,7 @@
           <div v-if="n > 6 && n <= 11">
             <img
               :src="
-                './images/namestaj_po_meri/realizovani_projekti/' + n + '.jpg'
+                './images/namestaj_po_meri/realizovani_projekti/' + n + '.webp'
               "
               @click="zoomImage(n)"
             />
@@ -34,7 +34,7 @@
           <div v-if="n > 11 && n <= 16">
             <img
               :src="
-                './images/namestaj_po_meri/realizovani_projekti/' + n + '.jpg'
+                './images/namestaj_po_meri/realizovani_projekti/' + n + '.webp'
               "
               @click="zoomImage(n)"
             />
@@ -48,7 +48,7 @@
           <div v-if="n > 16 && n <= 22">
             <img
               :src="
-                './images/namestaj_po_meri/realizovani_projekti/' + n + '.jpg'
+                './images/namestaj_po_meri/realizovani_projekti/' + n + '.webp'
               "
               @click="zoomImage(n)"
             />
@@ -80,7 +80,7 @@
           :key="n"
           :name="n"
           :img-src="
-            './images/namestaj_po_meri/realizovani_projekti/' + n + '.jpg'
+            './images/namestaj_po_meri/realizovani_projekti/' + n + '.webp'
           "
         />
       </q-carousel>

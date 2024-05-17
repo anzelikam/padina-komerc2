@@ -29,8 +29,6 @@
 </template>
 <script setup>
 import { ref } from "vue";
-
-import { useStoreKancelarije } from "../../stores/storeKancelarije";
 import { useStorePredsoblja } from "../../stores/storePredsoblja";
 import { useStoreVisenamenskiNamestaj } from "../../stores/storeVisenamenskiNamestaj";
 import selektovaniAmbijent from "../../components/saradnici/selektovaniAmbijent.vue";
@@ -42,10 +40,10 @@ const nazivAmbijenta = ref("Predsoblja");
 const ambijenti = ref([
   {
     imagePath: "/images/ambijenti/predsoblja/",
-    slika: "/images/ambijenti/predsoblja.jpg",
+    slika: "/images/ambijenti/predsoblja.webp",
     naziv: "predsoblja ambijenti",
     selektovano: storePredsoblja.predsoblja,
-    imageExt: ".jpg",
+    imageExt: ".webp",
   },
 ]);
 
@@ -55,21 +53,21 @@ const celineAmbijenta = ref([
     slika: "/icons/kolekcije-predsoblja.png",
     naziv: "kolekcije",
     selektovano: storePredsoblja.kolekcije,
-    imageExt: ".jpg",
+    imageExt: ".webp",
   },
   {
     imagePath: "/images/cipelari/",
     slika: "/icons/cipelarnik.png",
     naziv: "cipelarnici",
     selektovano: storePredsoblja.cipelari,
-    imageExt: ".jpg",
+    imageExt: ".webp",
   },
   {
     imagePath: "/images/visenamenski_namestaj/komode/",
     slika: "/icons/komoda.png",
     naziv: "komode",
     selektovano: storeVisenamenskiNamestaj.komode,
-    imageExt: ".jpg",
+    imageExt: ".webp",
   },
 ]);
 </script>

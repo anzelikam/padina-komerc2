@@ -15,7 +15,7 @@
       />
     </div>
 
-    <div class="row justify-center" style="max-width: 550px; margin: 0 auto">
+    <div class="row justify-center" style="max-width: 650px; margin: 0 auto">
       <div
         v-for="celina in celineAmbijenta"
         :key="celina.slika"
@@ -139,7 +139,7 @@ function selektovaniProizvodi(selected, image, name, ext) {
   cursor: pointer;
   border: 1px solid #091d34;
   border-radius: 5px;
-  margin: 2px;
+  margin: 4px;
 }
 
 .celinaAmbijenta:hover {

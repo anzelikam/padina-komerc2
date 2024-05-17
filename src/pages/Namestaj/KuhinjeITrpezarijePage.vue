@@ -42,10 +42,10 @@ const nazivAmbijenta = ref("Kuhinje i trpezarije");
 const ambijenti = ref([
   {
     imagePath: "/images/ambijenti/kuhinje/",
-    slika: "/images/ambijenti/kuhinje_i_trpezarije.jpg",
+    slika: "/images/ambijenti/kuhinje_i_trpezarije.webp",
     naziv: "kuhinje ambijenti",
     selektovano: storeKuhinje.kuhinje,
-    imageExt: ".png",
+    imageExt: ".webp",
   },
 ]);
 
@@ -55,7 +55,7 @@ const celineAmbijenta = ref([
     slika: "/icons/trpezarijski-sto.png",
     naziv: "trpezarijski stolovi",
     selektovano: storeKuhinje.trpezarijskiStolovi,
-    imageExt: ".jpg",
+    imageExt: ".webp",
   },
 
   {
@@ -63,7 +63,7 @@ const celineAmbijenta = ref([
     slika: "/icons/trpezarijska-stolica.png",
     naziv: "trpezarijske stolice",
     selektovano: storeKuhinje.trpezarijskeStolice,
-    imageExt: ".jpg",
+    imageExt: ".webp",
   },
 
   {
@@ -71,14 +71,14 @@ const celineAmbijenta = ref([
     slika: "/icons/kuhinjska-vitrina.png",
     naziv: "vitrine",
     selektovano: storeVisenamenskiNamestaj.kuhinjskeVitrine,
-    imageExt: ".jpg",
+    imageExt: ".webp",
   },
   {
     imagePath: "/images/visenamenski_namestaj/komode/",
     slika: "/icons/komoda.png",
     naziv: "komode",
     selektovano: storeVisenamenskiNamestaj.komode,
-    imageExt: ".jpg",
+    imageExt: ".webp",
   },
 ]);
 </script>

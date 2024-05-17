@@ -46,13 +46,13 @@
 
 <script setup>
 import { ref, onMounted } from "vue";
-
 const katalozi = ref([]);
 
 async function fetchKatalozi() {
   try {
     const response = await fetch(
-      "https://raw.githack.com/anzelikam/padinaKomerc-update/main/katalozi.js"
+      // "https://raw.githack.com/anzelikam/padinaKomerc-update/main/katalozi.js"
+      "https://rawcdn.githack.com/anzelikam/padinaKomerc-update/8c2de7dacafb0e8b7e16d48b0272373afd52a79a/katalozi.js"
     );
     if (!response.ok) {
       throw new Error("Failed to fetch catalog data");

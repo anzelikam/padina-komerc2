@@ -22,9 +22,9 @@
         <div class="homePageCont text-center row">
           <div class="col-2"></div>
           <div class="col-8" style="max-width: 1600px">
-            <h4 class="text-white text-center">
-              Nameštaj po meri napravljen u našoj radionici
-            </h4>
+            <h5 class="text-white text-center">
+              NAMEŠTAJ PO MERI NAPRAVLJEN U NAŠOJ RADIONICI
+            </h5>
             <div>
               <p class="text-white">
                 Dođite da zajedno pronađemo rešenje, koje će odgovarati vašem

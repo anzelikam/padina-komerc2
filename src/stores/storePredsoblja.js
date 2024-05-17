@@ -9,21 +9,18 @@ export const useStorePredsoblja = defineStore("predsoblja", {
         img: "denver",
         naziv: "denver",
         favorite: false,
-        images: ["/images/ambijenti/predsoblja/matis/denver.jpg"],
       },
       {
         proizvodjac: "jela",
         img: "evergreen",
         naziv: "evergreen",
         favorite: false,
-        images: ["/images/ambijenti/predsoblja/jela/evergreen.jpg"],
       },
       {
         proizvodjac: "attrium",
         img: "arija",
         naziv: "arija",
         favorite: false,
-        images: ["/images/ambijenti/predsoblja/attrium/arija.jpg"],
       },
     ],
     kolekcije: [

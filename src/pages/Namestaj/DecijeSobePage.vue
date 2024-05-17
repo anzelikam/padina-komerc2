@@ -34,10 +34,10 @@ const nazivAmbijenta = ref("Dečije sobe");
 const ambijenti = ref([
   {
     imagePath: "/images/ambijenti/decije_sobe/",
-    slika: "/images/ambijenti/decije_sobe.jpg",
+    slika: "/images/ambijenti/decije_sobe.webp",
     naziv: "dečije sobe ambijenti",
     selektovano: storeDecijeSobe.decijeSobe,
-    imageExt: ".jpg",
+    imageExt: ".webp",
   },
 ]);
 
@@ -47,35 +47,35 @@ const celineAmbijenta = ref([
     slika: "/icons/krevet-samac.png",
     naziv: "kreveti samci",
     selektovano: storeDecijeSobe.krevetiSamci,
-    imageExt: ".jpg",
+    imageExt: ".webp",
   },
   {
     imagePath: "/images/lezajevi/",
     slika: "/icons/lezaj.png",
     naziv: "ležajevi",
     selektovano: storeVisenamenskiNamestaj.lezajevi,
-    imageExt: ".jpg",
+    imageExt: ".webp",
   },
   {
     imagePath: "/images/ormari_plakari_garderoberi/decija/",
     slika: "/icons/nocni-ormaric.png",
     naziv: "garderoberi, komode, ormarići",
     selektovano: storeDecijeSobe.garderoberiKomodeNocniOrmarici,
-    imageExt: ".jpg",
+    imageExt: ".webp",
   },
   {
     imagePath: "/images/radni_stolovi/deciji/",
     slika: "/icons/radni-sto.png",
     naziv: "radni stolovi",
     selektovano: storeDecijeSobe.radniStolovi,
-    imageExt: ".jpg",
+    imageExt: ".webp",
   },
   {
     imagePath: "/images/radne_stolice/",
     slika: "/icons/radna-stolica.png",
     naziv: "radne stolice",
     selektovano: storeVisenamenskiNamestaj.radneStolice,
-    imageExt: ".jpg",
+    imageExt: ".webp",
   },
 ]);
 </script>

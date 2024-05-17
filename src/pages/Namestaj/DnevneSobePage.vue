@@ -34,10 +34,10 @@ const nazivAmbijenta = ref("Dnevne sobe");
 const ambijenti = ref([
   {
     imagePath: "/images/ambijenti/dnevne_sobe/",
-    slika: "/images/ambijenti/dnevne_sobe.jpg",
+    slika: "/images/ambijenti/dnevne_sobe.webp",
     naziv: "dnevne sobe ambijenti",
     selektovano: storeDnevneSobe.dnevneSobe,
-    imageExt: ".jpg",
+    imageExt: ".webp",
   },
 ]);
 
@@ -47,21 +47,21 @@ const celineAmbijenta = ref([
     slika: "/icons/ugaona.png",
     naziv: "ugaone garniture",
     selektovano: storeDnevneSobe.ugaoneGarniture,
-    imageExt: ".jpg",
+    imageExt: ".webp",
   },
   {
     imagePath: "/images/tdf_garniture/",
     slika: "/icons/trosed-dvosed-fotelja.png",
     naziv: "tdf garniture",
     selektovano: storeDnevneSobe.tdfGarniture,
-    imageExt: ".jpg",
+    imageExt: ".webp",
   },
   {
     imagePath: "/images/fotelje_i_taburei/",
     slika: "/icons/fotelja.png",
     naziv: "fotelje i taburei",
     selektovano: storeDnevneSobe.foteljeItaburei,
-    imageExt: ".jpg",
+    imageExt: ".webp",
   },
 
   {
@@ -69,14 +69,14 @@ const celineAmbijenta = ref([
     slika: "/icons/kauc.png",
     naziv: "kaučevi",
     selektovano: storeDnevneSobe.kaucevi,
-    imageExt: ".jpg",
+    imageExt: ".webp",
   },
   {
     imagePath: "/images/lezajevi/",
     slika: "/icons/lezaj.png",
     naziv: "ležajevi",
     selektovano: storeVisenamenskiNamestaj.lezajevi,
-    imageExt: ".jpg",
+    imageExt: ".webp",
   },
 
   {
@@ -84,7 +84,7 @@ const celineAmbijenta = ref([
     slika: "/icons/klub-sto.png",
     naziv: "klub stolovi",
     selektovano: storeDnevneSobe.klubStolovi,
-    imageExt: ".jpg",
+    imageExt: ".webp",
   },
 
   {
@@ -92,14 +92,14 @@ const celineAmbijenta = ref([
     slika: "/icons/komoda.png",
     naziv: "komode",
     selektovano: storeVisenamenskiNamestaj.komode,
-    imageExt: ".jpg",
+    imageExt: ".webp",
   },
   {
     imagePath: "/images/tv_komode/",
     slika: "/icons/tv-stand.png",
     naziv: "tv-komode",
     selektovano: storeDnevneSobe.tvKomode,
-    imageExt: ".jpg",
+    imageExt: ".webp",
   },
 ]);
 </script>

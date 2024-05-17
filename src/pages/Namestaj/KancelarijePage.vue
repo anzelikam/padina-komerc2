@@ -41,10 +41,10 @@ const nazivAmbijenta = ref("Kancelarije");
 const ambijenti = ref([
   {
     imagePath: "/images/ambijenti/kancelarije/",
-    slika: "/images/ambijenti/kancelarije.jpg",
+    slika: "/images/ambijenti/kancelarije.webp",
     naziv: "kancelarije ambijenti",
     selektovano: storeKancelarije.kancelarije,
-    imageExt: ".jpg",
+    imageExt: ".webp",
   },
 ]);
 
@@ -54,21 +54,21 @@ const celineAmbijenta = ref([
     slika: "/icons/kancelarijski-sto.png",
     naziv: "leonidas program",
     selektovano: storeKancelarije.leonidas,
-    imageExt: ".jpg",
+    imageExt: ".webp",
   },
   {
     imagePath: "/images/radni_stolovi/office/",
     slika: "/icons/radni-sto.png",
     naziv: "radni stolovi",
     selektovano: storeKancelarije.radniStolovi,
-    imageExt: ".jpg",
+    imageExt: ".webp",
   },
   {
     imagePath: "/images/radne_stolice/",
     slika: "/icons/radna-stolica.png",
     naziv: "radne stolice",
     selektovano: storeVisenamenskiNamestaj.radneStolice,
-    imageExt: ".jpg",
+    imageExt: ".webp",
   },
 ]);
 </script>
